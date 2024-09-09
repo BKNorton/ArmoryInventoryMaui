@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using ArmoryInventoryMaui.Interfaces;
+using ArmoryInventoryMaui.Repositories;
+using ArmoryInventoryMaui.ViewModels;
+using ArmoryInventoryMaui.Views;
+using Microsoft.Extensions.Logging;
 
 namespace ArmoryInventoryMaui
 {
@@ -15,8 +19,12 @@ namespace ArmoryInventoryMaui
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddSingleton<IRepository, InMemoryRepository>();
+            builder.Services.AddTransient<InventoryMainPage>();
+            builder.Services.AddTransient<InventoryMainViewModel>();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

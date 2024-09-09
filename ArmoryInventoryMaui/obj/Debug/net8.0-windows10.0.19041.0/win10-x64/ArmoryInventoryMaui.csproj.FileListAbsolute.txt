@@ -176,3 +176,6 @@ C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\army_background.scale-100.jpg
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.sourcelink.json
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll

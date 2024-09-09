@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:m="clr-namespace:ArmoryInventoryMaui.Models"
+             xmlns:vm="clr-namespace:ArmoryInventoryMaui.ViewModels"
+             x:DataType="vm:InventoryMainViewModel"
+             x:Class="ArmoryInventoryMaui.Views.InventoryMainPage"
+             Title="InventoryMainPage">
+    <Grid
+        RowDefinitions="65,100,*,100"
+        ColumnDefinitions="1800,*"
+        Padding="10"
+        BackgroundColor="Black">
+
+        <Image
+        Source="army_background.jpg"
+        Grid.ColumnSpan="2"
+        Grid.RowSpan="4"
+        Aspect="AspectFill">
+        </Image>
+
+        <SearchBar
+            x:Name="SearchBar"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            WidthRequest="300"
+            HeightRequest="50"
+            Placeholder="Search Item"
+            IsSpellCheckEnabled="False"
+            BackgroundColor="White"
+            Margin="20,10,0,0">
+        </SearchBar>
+
+        <Grid
+            ColumnDefinitions="*,*,*,*,*"
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="20,10,0,0"
+            WidthRequest="1750"
+            HeightRequest="75"
+            HorizontalOptions="Start">
+
+            <Frame
+                Grid.Column="0"
+                CornerRadius="0"
+                BorderColor="Orange"
+                BackgroundColor="black"
+                >
+                <Label 
+                    Text="Serial Number"
+                    HorizontalOptions="Start"
+                    FontSize="Title"
+                    TextColor="Orange">
+                </Label>
+            </Frame>
+
+            <Frame
+                Grid.Column="1"
+                CornerRadius="0"
+                BorderColor="Orange"
+                BackgroundColor="Black">
+                <Label 
+                    Text="Item Type"
+                    HorizontalOptions="Start"
+                    FontSize="Title"
+                    TextColor="Orange">
+                </Label>
+            </Frame>
+
+            <Frame
+                Grid.Column="2"
+                CornerRadius="0"
+                BorderColor="Orange"
+                BackgroundColor="Black">
+                <Label 
+                    Text="Complete"
+                    HorizontalOptions="Start"
+                    FontSize="Title"
+                    TextColor="Orange">
+                </Label>
+            </Frame>
+
+            <Frame
+                Grid.Column="3"
+                CornerRadius="0"
+                BorderColor="Orange"
+                BackgroundColor="Black">
+                <Label 
+                    Text="Mission Capable"
+                    HorizontalOptions="Start"
+                    FontSize="Title"
+                    TextColor="Orange">
+                </Label>
+            </Frame>
+
+            <Frame
+                Grid.Column="4"
+                CornerRadius="0"
+                BorderColor="Orange"
+                BackgroundColor="Black">
+                <Label 
+                    Text="Checked Out"
+                    HorizontalOptions="Start"
+                    FontSize="Title"
+                    TextColor="Orange">
+                </Label>
+            </Frame>
+        </Grid>
+
+        <CollectionView
+            x:Name="Collection"
+            ItemsSource="{Binding Items}"
+            Grid.Row="2"
+            Grid.Column="0"
+            BackgroundColor="Grey"
+            Margin="20,0,0,0"
+            Header="{Binding .}"
+            WidthRequest="1750"
+            HorizontalOptions="Start"
+            VerticalOptions="Start">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="m:Item">
+                    <Grid
+                        Margin="0"
+                        RowDefinitions="*"
+                        ColumnDefinitions="*,*,*,*,*">
+
+                        <Frame 
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            Grid.Column="0"
+                            BackgroundColor="white">
+                            <Label 
+                                Text="{Binding SerialNumber}"
+                                HorizontalOptions="Start">
+                            </Label>
+                        </Frame>
+
+                        <Frame 
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="LightGrey"
+                            Grid.Column="1">
+                            <Label 
+                                Text="{Binding Name}"
+                                HorizontalOptions="Start">
+                            </Label>
+                        </Frame>
+
+                        <Frame 
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="white"
+                            Grid.Column="2">
+                            <Label 
+                                Text="{Binding HasAllComponents}"
+                                HorizontalOptions="Start">
+                            </Label>
+                        </Frame>
+
+                        <Frame 
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="LightGrey"
+                            Grid.Column="3">
+                            <Label 
+                                Text="{Binding MissionCapable}"
+                                HorizontalOptions="Start">
+                            </Label>
+                        </Frame>
+
+                        <Frame 
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="white"
+                            Grid.Column="4">
+                            <Label 
+                                Text="{Binding CheckedOut}"
+                                HorizontalOptions="Start">
+                            </Label>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <HorizontalStackLayout
+        Grid.Column="1"
+        Grid.Row="0"
+        VerticalOptions="Start"
+        HorizontalOptions="End">
+
+            <Label
+            Text="Pages :"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            Margin="0,0,15,0"
+            TextColor="White"
+            FontAttributes="Bold"
+            FontSize="Title">
+            </Label>
+            <Button
+            CornerRadius="0"
+            WidthRequest="275"
+            HeightRequest="40"
+            Text="Inventory"
+            HorizontalOptions="Center"
+            BackgroundColor="Orange"
+            TextColor="Black"
+            BorderColor="Black">
+            </Button>
+
+            <Button
+            CornerRadius="0"
+            WidthRequest="275"
+            HeightRequest="40"
+            Text="Mission History"
+            HorizontalOptions="Center"
+            BackgroundColor="Orange"
+            TextColor="Black"
+            BorderColor="Black">
+            </Button>
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout
+            Grid.Column="1"
+            Grid.Row="2"
+            Spacing="5"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Margin="10,0,0,0">
+            <Button
+                WidthRequest="100"
+                HeightRequest="45"
+                Text="Add"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                BorderColor="Black">
+            </Button>
+
+            <Button
+                WidthRequest="100"
+                HeightRequest="45"
+                Text="Edit"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                BorderColor="Black">
+            </Button>
+
+            <Button
+                WidthRequest="100"
+                HeightRequest="45"
+                Margin="0,25,0,0"
+                Text="Delete"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                BorderColor="Black">
+            </Button>
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout
+            Grid.Column="0"
+            Grid.Row="3"
+            Spacing="50"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+            <Button
+            WidthRequest="350"
+            HeightRequest="60"
+            Text="Checkout"
+            HorizontalOptions="Center"
+            BackgroundColor="Orange"
+            TextColor="Black"
+            BorderColor="Black">
+            </Button>
+
+            <Button
+            WidthRequest="350"
+            HeightRequest="60"
+            Text="Create Mission"
+            HorizontalOptions="Center"
+            BackgroundColor="Orange"
+            TextColor="Black"
+            BorderColor="Black">
+            </Button>
+
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>
