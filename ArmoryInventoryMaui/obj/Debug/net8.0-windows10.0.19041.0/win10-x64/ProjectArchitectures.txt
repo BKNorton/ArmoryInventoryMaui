@@ -1,0 +1,1 @@
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\ArmoryInventoryMaui.csproj;x64
