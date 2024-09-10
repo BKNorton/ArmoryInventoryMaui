@@ -5,12 +5,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ArmoryInventoryMaui.Views"
     xmlns:local="clr-namespace:ArmoryInventoryMaui"
-    Shell.FlyoutBehavior="Disabled"
-    Title="ArmoryInventoryMaui">
+    Shell.FlyoutBehavior="Flyout"
+    Title="ArmoryInventoryMaui"
+    Shell.BackgroundColor="{StaticResource Primary}"
+    Shell.TitleColor="White">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:InventoryMainPage}"
-        Route="MainPage" />
+    <FlyoutItem>
 
+        <ShellContent
+            Title="Inventory"
+            ContentTemplate="{DataTemplate views:InventoryMainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Missions"
+            ContentTemplate="{DataTemplate views:MissionsPage}"
+            Route="MissionsPage" />
+    </FlyoutItem>
 </Shell>

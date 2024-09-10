@@ -1,3 +1,15 @@
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.csproj.AssemblyReference.cache
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.exe
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.deps.json
@@ -6,6 +18,7 @@ C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.pdb
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -76,18 +89,6 @@ C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.csproj.AssemblyReference.cache
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
@@ -143,6 +144,7 @@ C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\army_background.scale-100.jpg
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
@@ -153,6 +155,7 @@ C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.AssemblyInfoInputs.cache
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.AssemblyInfo.cs
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.csproj.CoreCompileInputs.cache
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.sourcelink.json
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlC.stamp
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryIn.99AB2E48.Up2Date
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.dll
@@ -176,6 +179,3 @@ C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\army_background.scale-100.jpg
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.sourcelink.json
-C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll

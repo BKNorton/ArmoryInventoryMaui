@@ -186,44 +186,6 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <HorizontalStackLayout
-        Grid.Column="1"
-        Grid.Row="0"
-        VerticalOptions="Start"
-        HorizontalOptions="End">
-
-            <Label
-            Text="Pages :"
-            VerticalOptions="Center"
-            HorizontalOptions="Start"
-            Margin="0,0,15,0"
-            TextColor="White"
-            FontAttributes="Bold"
-            FontSize="Title">
-            </Label>
-            <Button
-            CornerRadius="0"
-            WidthRequest="275"
-            HeightRequest="40"
-            Text="Inventory"
-            HorizontalOptions="Center"
-            BackgroundColor="Orange"
-            TextColor="Black"
-            BorderColor="Black">
-            </Button>
-
-            <Button
-            CornerRadius="0"
-            WidthRequest="275"
-            HeightRequest="40"
-            Text="Mission History"
-            HorizontalOptions="Center"
-            BackgroundColor="Orange"
-            TextColor="Black"
-            BorderColor="Black">
-            </Button>
-        </HorizontalStackLayout>
-
         <VerticalStackLayout
             Grid.Column="1"
             Grid.Row="2"
@@ -237,7 +199,8 @@
                 Text="Add"
                 BackgroundColor="Orange"
                 TextColor="Black"
-                BorderColor="Black">
+                BorderColor="Black"
+                BorderWidth="1">
             </Button>
 
             <Button
@@ -246,7 +209,8 @@
                 Text="Edit"
                 BackgroundColor="Orange"
                 TextColor="Black"
-                BorderColor="Black">
+                BorderColor="Black"
+                BorderWidth="1">
             </Button>
 
             <Button
@@ -256,7 +220,8 @@
                 Text="Delete"
                 BackgroundColor="Orange"
                 TextColor="Black"
-                BorderColor="Black">
+                BorderColor="Black"
+                BorderWidth="1">
             </Button>
         </VerticalStackLayout>
 
@@ -274,7 +239,8 @@
             HorizontalOptions="Center"
             BackgroundColor="Orange"
             TextColor="Black"
-            BorderColor="Black">
+            BorderColor="Black"
+                BorderWidth="1">
             </Button>
 
             <Button
@@ -284,7 +250,8 @@
             HorizontalOptions="Center"
             BackgroundColor="Orange"
             TextColor="Black"
-            BorderColor="Black">
+            BorderColor="Black"
+                BorderWidth="1">
             </Button>
 
         </HorizontalStackLayout>

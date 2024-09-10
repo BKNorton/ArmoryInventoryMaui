@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-09T18:12:48.890</Modified>
+      <Modified>2024-09-10T03:54:36.939</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-09T18:09:54.386</Modified>
+      <Modified>2024-09-10T03:36:11.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.runtimeconfig.json">
       <PackagePath>ArmoryInventoryMaui.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-09T18:09:54.098</Modified>
+      <Modified>2024-09-10T03:36:10.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.dll">
       <PackagePath>ArmoryInventoryMaui.dll</PackagePath>
-      <Modified>2024-09-09T18:12:48.473</Modified>
+      <Modified>2024-09-10T03:54:35.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ArmoryInventoryMaui.exe</PackagePath>
-      <Modified>2024-09-09T18:12:48.478</Modified>
+      <Modified>2024-09-10T03:54:35.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -56,23 +56,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-09-09T06:36:44.904</Modified>
+      <Modified>2024-09-10T03:31:21.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-09-09T06:36:44.930</Modified>
+      <Modified>2024-09-10T03:31:21.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-09-09T06:36:44.968</Modified>
+      <Modified>2024-09-10T03:31:21.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-09-09T06:36:45.022</Modified>
+      <Modified>2024-09-10T03:31:21.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-09-09T06:36:45.201</Modified>
+      <Modified>2024-09-10T03:31:21.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -84,215 +84,215 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-09-09T17:39:19.720</Modified>
+      <Modified>2024-09-10T03:31:22.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.712</Modified>
+      <Modified>2024-09-10T03:31:22.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.712</Modified>
+      <Modified>2024-09-10T03:31:22.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.711</Modified>
+      <Modified>2024-09-10T03:31:22.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.711</Modified>
+      <Modified>2024-09-10T03:31:22.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.711</Modified>
+      <Modified>2024-09-10T03:31:22.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.717</Modified>
+      <Modified>2024-09-10T03:31:22.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.717</Modified>
+      <Modified>2024-09-10T03:31:22.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.716</Modified>
+      <Modified>2024-09-10T03:31:22.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.717</Modified>
+      <Modified>2024-09-10T03:31:22.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.716</Modified>
+      <Modified>2024-09-10T03:31:22.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.718</Modified>
+      <Modified>2024-09-10T03:31:22.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.718</Modified>
+      <Modified>2024-09-10T03:31:22.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.717</Modified>
+      <Modified>2024-09-10T03:31:22.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.718</Modified>
+      <Modified>2024-09-10T03:31:22.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.717</Modified>
+      <Modified>2024-09-10T03:31:22.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.720</Modified>
+      <Modified>2024-09-10T03:31:22.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.720</Modified>
+      <Modified>2024-09-10T03:31:22.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.720</Modified>
+      <Modified>2024-09-10T03:31:22.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.719</Modified>
+      <Modified>2024-09-10T03:31:22.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.719</Modified>
+      <Modified>2024-09-10T03:31:22.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.719</Modified>
+      <Modified>2024-09-10T03:31:22.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.719</Modified>
+      <Modified>2024-09-10T03:31:22.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.718</Modified>
+      <Modified>2024-09-10T03:31:22.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.719</Modified>
+      <Modified>2024-09-10T03:31:22.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.718</Modified>
+      <Modified>2024-09-10T03:31:22.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.714</Modified>
+      <Modified>2024-09-10T03:31:22.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.714</Modified>
+      <Modified>2024-09-10T03:31:22.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.713</Modified>
+      <Modified>2024-09-10T03:31:22.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.713</Modified>
+      <Modified>2024-09-10T03:31:22.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.713</Modified>
+      <Modified>2024-09-10T03:31:22.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.715</Modified>
+      <Modified>2024-09-10T03:31:22.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.715</Modified>
+      <Modified>2024-09-10T03:31:22.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.714</Modified>
+      <Modified>2024-09-10T03:31:22.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.714</Modified>
+      <Modified>2024-09-10T03:31:22.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.714</Modified>
+      <Modified>2024-09-10T03:31:22.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.716</Modified>
+      <Modified>2024-09-10T03:31:22.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.716</Modified>
+      <Modified>2024-09-10T03:31:22.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.716</Modified>
+      <Modified>2024-09-10T03:31:22.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.715</Modified>
+      <Modified>2024-09-10T03:31:22.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.715</Modified>
+      <Modified>2024-09-10T03:31:22.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.713</Modified>
+      <Modified>2024-09-10T03:31:22.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.713</Modified>
+      <Modified>2024-09-10T03:31:22.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.712</Modified>
+      <Modified>2024-09-10T03:31:22.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.712</Modified>
+      <Modified>2024-09-10T03:31:22.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.712</Modified>
+      <Modified>2024-09-10T03:31:22.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\army_background.scale-100.jpg">
       <PackagePath>army_background.scale-100.jpg</PackagePath>
-      <Modified>2024-09-09T17:39:19.709</Modified>
+      <Modified>2024-09-10T03:31:22.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.711</Modified>
+      <Modified>2024-09-10T03:31:22.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.711</Modified>
+      <Modified>2024-09-10T03:31:22.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.710</Modified>
+      <Modified>2024-09-10T03:31:22.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.710</Modified>
+      <Modified>2024-09-10T03:31:22.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:39:19.710</Modified>
+      <Modified>2024-09-10T03:31:22.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.deps.json">
       <PackagePath>ArmoryInventoryMaui.deps.json</PackagePath>
-      <Modified>2024-09-09T18:09:53.934</Modified>
+      <Modified>2024-09-10T03:36:10.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

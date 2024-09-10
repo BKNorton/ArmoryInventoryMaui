@@ -20,7 +20,10 @@ namespace ArmoryInventoryMaui
                 });
 
             builder.Services.AddSingleton<IRepository, InMemoryRepository>();
+
             builder.Services.AddTransient<InventoryMainPage>();
+            builder.Services.AddTransient<MissionsPage>();
+
             builder.Services.AddTransient<InventoryMainViewModel>();
 
 #if DEBUG
