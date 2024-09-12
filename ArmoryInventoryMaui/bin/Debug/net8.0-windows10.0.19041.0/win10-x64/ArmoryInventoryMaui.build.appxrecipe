@@ -61,6 +61,9 @@
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\antenna_pic.scale-100.png">
+      <PackagePath>antenna_pic.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>

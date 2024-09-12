@@ -5,7 +5,7 @@
              xmlns:vm="clr-namespace:ArmoryInventoryMaui.ViewModels"
              x:DataType="vm:InventoryMainViewModel"
              x:Class="ArmoryInventoryMaui.Views.InventoryMainPage"
-             Title="InventoryMainPage">
+             Title="Inventory">
     <Grid
         RowDefinitions="65,100,*,100"
         ColumnDefinitions="1800,*"
@@ -13,10 +13,10 @@
         BackgroundColor="Black">
 
         <Image
-        Source="army_background.jpg"
-        Grid.ColumnSpan="2"
-        Grid.RowSpan="4"
-        Aspect="AspectFill">
+            Source="army_background.jpg"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="4"
+            Aspect="AspectFill">
         </Image>
 
         <SearchBar
@@ -144,7 +144,7 @@
                             BackgroundColor="LightGrey"
                             Grid.Column="1">
                             <Label 
-                                Text="{Binding Name}"
+                                Text="{Binding ItemType}"
                                 HorizontalOptions="Start">
                             </Label>
                         </Frame>
@@ -200,7 +200,8 @@
                 BackgroundColor="Orange"
                 TextColor="Black"
                 BorderColor="Black"
-                BorderWidth="1">
+                BorderWidth="1"
+                Command="{Binding GoToAddItemPageCommand}">
             </Button>
 
             <Button

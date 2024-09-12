@@ -23,8 +23,11 @@ namespace ArmoryInventoryMaui
 
             builder.Services.AddTransient<InventoryMainPage>();
             builder.Services.AddTransient<MissionsPage>();
+            builder.Services.AddTransient<RetransPage>();
+            builder.Services.AddSingleton<AddItemPage>();
 
-            builder.Services.AddTransient<InventoryMainViewModel>();
+            builder.Services.AddSingleton<InventoryMainViewModel>();
+            builder.Services.AddSingleton<ItemViewModel>();
 
 #if DEBUG
             builder.Logging.AddDebug();

@@ -21,5 +21,10 @@
             Title="Missions"
             ContentTemplate="{DataTemplate views:MissionsPage}"
             Route="MissionsPage" />
+
+        <ShellContent
+            Title="Retrans"
+            ContentTemplate="{DataTemplate views:RetransPage}"
+            Route="MissionsPage" />
     </FlyoutItem>
 </Shell>

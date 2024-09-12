@@ -16,5 +16,14 @@ namespace ArmoryInventoryMaui.Models
         public bool CheckedOut { get; set; }
         public List<string> Defects { get; set; }
         public List<string> MissingComponents { get; set; }
+        public Type ItemType { get; set; }
+
+        public enum Type 
+        {
+            Antenna,
+            Radio,
+            HandMic,
+            Daggr
+        }
     }
 }

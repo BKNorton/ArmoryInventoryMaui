@@ -22,7 +22,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -33,7 +34,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -44,7 +46,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -55,7 +58,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Hand Mic",
                     HasAllComponents = false,
                     MissionCapable = false,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -66,7 +70,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = true
+                    CheckedOut = true,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -77,7 +82,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -88,7 +94,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -99,7 +106,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -110,7 +118,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -121,7 +130,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -132,7 +142,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -143,7 +154,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = true
+                    CheckedOut = true,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -154,7 +166,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = true
+                    CheckedOut = true,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -165,7 +178,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = true
+                    CheckedOut = true,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -176,7 +190,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = false,
                     MissionCapable = false,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -187,7 +202,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -198,7 +214,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -209,7 +226,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -220,7 +238,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -231,7 +250,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -242,7 +262,8 @@ namespace ArmoryInventoryMaui.Repositories
                     Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
-                    CheckedOut = false
+                    CheckedOut = false,
+                    ItemType = Item.Type.Antenna
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },

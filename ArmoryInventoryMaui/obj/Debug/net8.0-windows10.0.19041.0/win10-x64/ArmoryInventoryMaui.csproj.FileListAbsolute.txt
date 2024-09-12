@@ -179,3 +179,4 @@ C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\antenna_pic.scale-100.png

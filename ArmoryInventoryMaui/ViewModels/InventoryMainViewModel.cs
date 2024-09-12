@@ -36,5 +36,11 @@ namespace ArmoryInventoryMaui.ViewModels
                 }
             }
         }
+
+        [RelayCommand]
+        public async Task GoToAddItemPageAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(AddItemPage));
+        }
     }  
 }
