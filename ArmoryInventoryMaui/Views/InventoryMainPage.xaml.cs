@@ -1,3 +1,4 @@
+using ArmoryInventoryMaui.Models;
 using ArmoryInventoryMaui.ViewModels;
 
 namespace ArmoryInventoryMaui.Views;
@@ -17,6 +18,13 @@ public partial class InventoryMainPage : ContentPage
     {
         base.OnAppearing();
 
+        this.EditBttn.IsEnabled = true;
+
         await this.mainViewModel.LoadContactsAsync();
+    }
+
+    private void Collection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        mainViewModel.SelectedItem = (Item)Collection.SelectedItem;
     }
 }

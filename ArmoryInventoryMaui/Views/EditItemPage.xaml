@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ArmoryInventoryMaui.ViewModels"
+             xmlns:item="clr-namespace:ArmoryInventoryMaui.Models"
+             x:DataType="vm:ItemViewModel"
+             x:Class="ArmoryInventoryMaui.Views.EditItemPage"
+             Title="Edit Item">
+    
+    <Grid
+        RowDefinitions="*,170"
+        ColumnDefinitions="*,*"
+        BindingContext="{Binding .}">
+        <Image
+            Source="antenna_pic.png"
+            Aspect="AspectFill"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="2">
+        </Image>
+
+        <ScrollView
+            HorizontalOptions="Center"
+            WidthRequest="800"
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="0,50,0,0">
+
+            <VerticalStackLayout
+                HorizontalOptions="Center"
+                WidthRequest="800">
+
+                <Frame
+                    BackgroundColor="Black"
+                    CornerRadius="0"
+                    BorderColor="Orange">
+                    <Label
+                        Text="Item"
+                        TextColor="Orange"
+                        FontSize="Header"
+                        HorizontalOptions="Center">
+                    </Label>
+                </Frame>
+
+                <Frame
+                    CornerRadius="0"
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray"
+                    HeightRequest="100">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Column="0"
+                            Text="Serial Number"
+                            VerticalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Entry
+                            Text="{Binding Item.SerialNumber}"
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            Placeholder="Serial Number"
+                            WidthRequest="300"
+                            BackgroundColor="White"
+                            Margin="20,0,0,0">
+                        </Entry>
+                    </Grid>
+                </Frame>
+
+                <Frame
+                    CornerRadius="0"
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray"
+                    HeightRequest="100">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Row="0"
+                            Text="Type"
+                            VerticalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Picker 
+                            SelectedItem="{Binding Item.ItemType}"
+                            Title="Select a Type"
+                            Grid.Column="1"
+                            WidthRequest="300"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            BackgroundColor="White"
+                            Margin="20,0,0,0">
+                            <Picker.Items>
+                                <x:String>Antenna</x:String>
+                                <x:String>Radio</x:String>
+                                <x:String>Hand Mic</x:String>
+                                <x:String>Daggr</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <!--<Entry
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        Placeholder="Type"
+                        WidthRequest="300"
+                        BackgroundColor="White"
+                        Margin="20,0,0,0">
+                    </Entry>-->
+                    </Grid>
+                </Frame>
+
+                <Frame
+                    CornerRadius="0"
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray"
+                    HeightRequest="100">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Column="0"
+                            Text="Has All Components"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Picker 
+                            Title="True or False"
+                            Grid.Column="1"
+                            WidthRequest="300"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            BackgroundColor="White"
+                            Margin="20,0,0,0">
+                            <Picker.Items>
+                                <x:String>True</x:String>
+                                <x:String>False</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Grid>
+                </Frame>
+
+                <Frame
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray"
+                    CornerRadius="0">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Column="0"
+                            Text="Defects"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Editor
+                            Grid.Column="1"
+                            Background="White"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            Placeholder="Defects"
+                            WidthRequest="300"
+                            HeightRequest="200"
+                            Margin="20,0,0,0">
+                        </Editor>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="List all Defects. Seperate Defects with a comma (,)"
+                            WidthRequest="200"
+                            VerticalOptions="Center"
+                            TextColor="Blue">
+
+                        </Label>
+                    </Grid>
+                </Frame>
+
+                <Frame
+                    CornerRadius="0"
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Column="0"
+                            Text="Missing Components"
+                            VerticalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Editor
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            Placeholder="Missing Components"
+                            WidthRequest="300"
+                            HeightRequest="200"
+                            BackgroundColor="White"
+                            Margin="20,0,0,0">
+                        </Editor>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="List all Missing Components. Seperate Missing Components with a comma (,)"
+                            WidthRequest="200"
+                            VerticalOptions="Center"
+                            TextColor="Blue">
+
+                        </Label>
+                    </Grid>
+                </Frame>
+
+                <Frame
+                    CornerRadius="0"
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray"
+                    HeightRequest="100">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Column="0"
+                            Text="Mission Capable"
+                            VerticalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Picker 
+                            Title="True or False"
+                            Grid.Column="1"
+                            WidthRequest="300"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            BackgroundColor="White"
+                            Margin="20,0,0,0">
+                            <Picker.Items>
+                                <x:String>True</x:String>
+                                <x:String>False</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <HorizontalStackLayout
+            Grid.Row="1"
+            Grid.Column="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Spacing="10"
+            Margin="470,5,0,0">
+            <Button
+                Text="Save"
+                WidthRequest="150"
+                HeightRequest="50"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                BorderColor="Black"
+                BorderWidth="1">
+
+            </Button>
+
+            <Button
+                Text="Cancel"
+                WidthRequest="150"
+                HeightRequest="50"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                BorderColor="Black"
+                BorderWidth="1"
+                Command="{Binding GoToInventoryMainPageCommand}">
+
+            </Button>
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>

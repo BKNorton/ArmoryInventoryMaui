@@ -118,7 +118,9 @@
             Header="{Binding .}"
             WidthRequest="1750"
             HorizontalOptions="Start"
-            VerticalOptions="Start">
+            VerticalOptions="Start"
+            SelectionMode="Single"
+            SelectionChanged="Collection_SelectionChanged">
 
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="m:Item">
@@ -194,8 +196,8 @@
             VerticalOptions="Start"
             Margin="10,0,0,0">
             <Button
-                WidthRequest="100"
-                HeightRequest="45"
+                WidthRequest="150"
+                HeightRequest="50"
                 Text="Add"
                 BackgroundColor="Orange"
                 TextColor="Black"
@@ -205,18 +207,20 @@
             </Button>
 
             <Button
-                WidthRequest="100"
-                HeightRequest="45"
+                x:Name="EditBttn"
+                WidthRequest="150"
+                HeightRequest="50"
                 Text="Edit"
                 BackgroundColor="Orange"
                 TextColor="Black"
                 BorderColor="Black"
-                BorderWidth="1">
+                BorderWidth="1"
+                Command="{Binding GoToEditItemPageCommand}">
             </Button>
 
             <Button
-                WidthRequest="100"
-                HeightRequest="45"
+                WidthRequest="150"
+                HeightRequest="50"
                 Margin="0,25,0,0"
                 Text="Delete"
                 BackgroundColor="Orange"
@@ -234,24 +238,24 @@
             VerticalOptions="Center">
 
             <Button
-            WidthRequest="350"
-            HeightRequest="60"
-            Text="Checkout"
-            HorizontalOptions="Center"
-            BackgroundColor="Orange"
-            TextColor="Black"
-            BorderColor="Black"
+                WidthRequest="350"
+                HeightRequest="60"
+                Text="Checkout"
+                HorizontalOptions="Center"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                BorderColor="Black"
                 BorderWidth="1">
             </Button>
 
             <Button
-            WidthRequest="350"
-            HeightRequest="60"
-            Text="Create Mission"
-            HorizontalOptions="Center"
-            BackgroundColor="Orange"
-            TextColor="Black"
-            BorderColor="Black"
+                WidthRequest="350"
+                HeightRequest="60"
+                Text="Create Mission"
+                HorizontalOptions="Center"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                BorderColor="Black"
                 BorderWidth="1">
             </Button>
 

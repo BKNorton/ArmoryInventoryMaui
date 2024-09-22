@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,11 +16,21 @@ namespace ArmoryInventoryMaui.ViewModels
     public partial class InventoryMainViewModel : ObservableObject
     {
         public ObservableCollection<Item> Items { get; set; }
-        private IRepository repository;
+        private Item selectedItem;
+        public Item SelectedItem
+        { 
+            get => selectedItem;
+            set
+            {
+                SetProperty(ref selectedItem, value);
+            }
+    }
+    private IRepository repository;
 
         public InventoryMainViewModel(IRepository repository)
         {
             this.Items = new ObservableCollection<Item>();
+            this.selectedItem = new Item();
             this.repository = repository;
         }
 
@@ -41,6 +52,12 @@ namespace ArmoryInventoryMaui.ViewModels
         public async Task GoToAddItemPageAsync()
         {
             await Shell.Current.GoToAsync(nameof(AddItemPage));
+        }
+
+        [RelayCommand]
+        public async Task GoToEditItemPageAsync()
+        {
+            await Shell.Current.GoToAsync($"{nameof(EditItemPage)}?Id={selectedItem.Id.ToString()}");
         }
     }  
 }

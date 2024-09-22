@@ -12,7 +12,7 @@ namespace ArmoryInventoryMaui.Interfaces
         public Task AddItemAsync(Item item);
         public Task RemoveItemAsync(Item item);
         public Task<List<Item>> GetItemsAsync();
-        public Task<Item> GetItemByIdAsync(Guid id);
+        public Task<Item> GetItemByIdAsync(string id);
         public Task UpdateItemAsync(Guid Id, Item item);
     }
 }

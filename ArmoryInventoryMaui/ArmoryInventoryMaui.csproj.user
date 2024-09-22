@@ -12,6 +12,9 @@
     <MauiXaml Update="Views\Controls\ItemControl.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\EditItemPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\InventoryMainPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

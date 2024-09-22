@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Type = ArmoryInventoryMaui.Models.Type;
 
 namespace ArmoryInventoryMaui.Repositories
 {
@@ -17,253 +18,232 @@ namespace ArmoryInventoryMaui.Repositories
             {
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "111N5",
-                    Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Radio
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "222NF",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "272N8",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "342N7",
-                    Name = "Hand Mic",
                     HasAllComponents = false,
                     MissionCapable = false,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.HandMic
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "233N7",
-                    Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = true,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Radio
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "522F4",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "442F4",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "523F5",
-                    Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.HandMic
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "372F4",
-                    Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Radio
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "522N4",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "624N2",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "623N5",
-                    Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = true,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.HandMic
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "124N8",
-                    Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = true,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.HandMic
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "367N2",
-                    Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = true,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Radio
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "355N3",
-                    Name = "Antenna",
                     HasAllComponents = false,
                     MissionCapable = false,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "557N2",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "363S2",
-                    Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.HandMic
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "867N2",
-                    Name = "Radio",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Radio
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "865N3",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "637N2",
-                    Name = "Antenna",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
                 new Item()
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     SerialNumber = "467N9",
-                    Name = "Hand Mic",
                     HasAllComponents = true,
                     MissionCapable = true,
                     CheckedOut = false,
-                    ItemType = Item.Type.Antenna
+                    ItemType = Type.Antenna
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -287,10 +267,14 @@ namespace ArmoryInventoryMaui.Repositories
             return Task.FromResult(items);
         }
 
-        public Task<Item> GetItemByIdAsync(Guid id)
+        public Task<Item> GetItemByIdAsync(string id)
         {
-            var item = items.Where(x => x.Id == id).FirstOrDefault();
-            return Task.FromResult(item);
+            var item = items.Where(x => x.Id.ToString() == id).FirstOrDefault();
+            if (item != null)
+            {
+                return Task.FromResult(item);
+            }
+            return (Task<Item>)Task.CompletedTask;
         }
 
         public Task UpdateItemAsync(Guid Id, Item item)
@@ -301,7 +285,7 @@ namespace ArmoryInventoryMaui.Repositories
             if (itemToUpdate != null)
             {
                 itemToUpdate.SerialNumber = item.SerialNumber;
-                itemToUpdate.Name = item.Name;
+                itemToUpdate.ItemType = item.ItemType;
                 itemToUpdate.Defects = item.Defects;
                 itemToUpdate.HasAllComponents = item.HasAllComponents;
                 itemToUpdate.MissingComponents = item.MissingComponents;
