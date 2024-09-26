@@ -81,30 +81,18 @@
                         </Label>
 
                         <Picker 
+                            ItemsSource="{Binding ItemType}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding ItemTypeSelectedItem}"
+                            SelectedIndex="{Binding Item.ItemType.ListIndex}"
                             Title="Select a Type"
                             Grid.Column="1"
                             WidthRequest="300"
                             VerticalOptions="Center"
                             HorizontalOptions="Start"
                             BackgroundColor="White"
-                            Margin="20,0,0,0"
-                            SelectedItem="{Binding Item.ItemType}">
-                            <Picker.Items>
-                                <x:String>Antenna</x:String>
-                                <x:String>Radio</x:String>
-                                <x:String>Hand Mic</x:String>
-                                <x:String>Daggr</x:String>
-                            </Picker.Items>
+                            Margin="20,0,0,0">
                         </Picker>
-                        <!--<Entry
-                        Grid.Column="1"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Start"
-                        Placeholder="Type"
-                        WidthRequest="300"
-                        BackgroundColor="White"
-                        Margin="20,0,0,0">
-                    </Entry>-->
                     </Grid>
                 </Frame>
 
@@ -124,18 +112,17 @@
                         </Label>
 
                         <Picker 
+                            ItemsSource="{Binding HasAllComponents}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding HasComponentsSelectedItem}"
+                            SelectedIndex="{Binding Item.HasAllComponents.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
                             VerticalOptions="Center"
                             HorizontalOptions="Start"
                             BackgroundColor="White"
-                            Margin="20,0,0,0"
-                            SelectedItem="{Binding Item.HasAllComponents}">
-                            <Picker.Items>
-                                <x:String>True</x:String>
-                                <x:String>False</x:String>
-                            </Picker.Items>
+                            Margin="20,0,0,0">
                         </Picker>
                     </Grid>
                 </Frame>
@@ -163,7 +150,7 @@
                             WidthRequest="300"
                             HeightRequest="200"
                             Margin="20,0,0,0"
-                            Text="{Binding Item.Defects}">
+                            Text="{Binding Defects}">
                         </Editor>
 
                         <Label
@@ -199,7 +186,7 @@
                             HeightRequest="200"
                             BackgroundColor="White"
                             Margin="20,0,0,0"
-                            Text="{Binding Item.MissingComponents}">
+                            Text="{Binding MissingComponents}">
                         </Editor>
 
                         <Label
@@ -228,18 +215,47 @@
                         </Label>
 
                         <Picker 
+                            ItemsSource="{Binding MissionCapable}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding MissionCapableSelectedItem}"
+                            SelectedIndex="{Binding Item.MissionCapable.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
                             VerticalOptions="Center"
                             HorizontalOptions="Start"
                             BackgroundColor="White"
-                            Margin="20,0,0,0"
-                            SelectedItem="{Binding Item.MissionCapable}">
-                            <Picker.Items>
-                                <x:String>True</x:String>
-                                <x:String>False</x:String>
-                            </Picker.Items>
+                            Margin="20,0,0,0">
+                        </Picker>
+                    </Grid>
+                </Frame>
+
+                <Frame
+                    CornerRadius="0"
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray"
+                    HeightRequest="100">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Column="0"
+                            Text="Checked Out"
+                            VerticalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Picker 
+                            ItemsSource="{Binding CheckedOut}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding CheckedOutSelectedItem}"
+                            SelectedIndex="{Binding Item.CheckedOut.ListIndex}"
+                            Title="True or False"
+                            Grid.Column="1"
+                            WidthRequest="300"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            BackgroundColor="White"
+                            Margin="20,0,0,0">
                         </Picker>
                     </Grid>
                 </Frame>

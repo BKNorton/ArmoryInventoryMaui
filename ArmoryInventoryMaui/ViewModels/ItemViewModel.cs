@@ -5,8 +5,6 @@ using ArmoryInventoryMaui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Linq;
 
 namespace ArmoryInventoryMaui.ViewModels
 {
@@ -75,7 +73,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref defects, value);
-                Item.Defects = value.Split(',').ToList(); ;
+                Item.Defects = value.Split(',').ToList<string>();
             }
         }
 
@@ -110,8 +108,6 @@ namespace ArmoryInventoryMaui.ViewModels
             MissionCapable = new TrueOrFalsePicker().TrueOrFalseCollection;
             CheckedOut = new TrueOrFalsePicker().TrueOrFalseCollection;
             ItemType = new ItemTypePicker().ItemTypesCollection;
-
-            
         }
 
         public async Task LoadItem(string itemId)
@@ -120,19 +116,29 @@ namespace ArmoryInventoryMaui.ViewModels
 
             ItemTypeSelectedItem = ItemType[this.Item.ItemType.ListIndex];
 
-            for (int i = 0; i < this.Item.Defects.Count; i++)
+            var defString = string.Empty;
+            if (Item.Defects != null)
             {
-                Defects += this.Item.Defects[i];
+                for (int i = 0; i < this.Item.Defects.Count; i++)
+                {
+                    defString += this.Item.Defects[i];
 
-                if (i != this.Item.Defects.Count-1) Defects += ", ";
+                    if (i != this.Item.Defects.Count - 1) defString += ", ";
+                }
+                Defects = defString;
             }
 
-            for (int i = 0; i < this.Item.MissingComponents.Count; i++)
+            var missString = string.Empty;
+            if (Item.MissingComponents != null)
             {
-                MissingComponents += this.Item.MissingComponents[i];
+                for (int i = 0; i < Item.MissingComponents.Count; i++)
+                {
+                    missString += this.Item.MissingComponents[i];
 
-                if (i != this.Item.MissingComponents.Count - 1) MissingComponents += ", ";
-            }
+                    if (i != this.Item.MissingComponents.Count - 1) missString += ", ";
+                }
+                MissingComponents = missString;
+            } 
         }
 
 

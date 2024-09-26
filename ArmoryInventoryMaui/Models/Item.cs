@@ -1,6 +1,4 @@
-﻿using ArmoryInventoryMaui.Models.Pickers;
-
-namespace ArmoryInventoryMaui.Models
+﻿namespace ArmoryInventoryMaui.Models
 {
     public class Item
     {

@@ -1,12 +1,5 @@
 ﻿using ArmoryInventoryMaui.Interfaces;
 using ArmoryInventoryMaui.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
 namespace ArmoryInventoryMaui.Repositories
 {
     public class InMemoryRepository : IRepository
@@ -289,6 +282,7 @@ namespace ArmoryInventoryMaui.Repositories
                 itemToUpdate.Defects = item.Defects;
                 itemToUpdate.HasAllComponents = item.HasAllComponents;
                 itemToUpdate.MissingComponents = item.MissingComponents;
+                itemToUpdate.CheckedOut = item.CheckedOut;
             }
 
             return Task.CompletedTask;

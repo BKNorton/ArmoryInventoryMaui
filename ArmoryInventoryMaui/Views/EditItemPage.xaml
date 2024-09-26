@@ -250,7 +250,7 @@
                             ItemsSource="{Binding CheckedOut}"
                             ItemDisplayBinding="{Binding Text}"
                             SelectedItem="{Binding CheckedOutSelectedItem}"
-                            SelectedIndex="{Binding CheckedOutSelectedItem.ListIndex}"
+                            SelectedIndex="{Binding Item.CheckedOut.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
