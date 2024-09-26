@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArmoryInventoryMaui</name>
+    </assembly>
+    <members>
+        <member name="T:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.goToAddItemPageCommand">
+            <summary>The backing field for <see cref="P:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.GoToAddItemPageCommand"/>.</summary>
+        </member>
+        <member name="P:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.GoToAddItemPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.GoToAddItemPageAsync"/>.</summary>
+        </member>
+        <member name="F:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.goToEditItemPageCommand">
+            <summary>The backing field for <see cref="P:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.GoToEditItemPageCommand"/>.</summary>
+        </member>
+        <member name="P:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.GoToEditItemPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ArmoryInventoryMaui.ViewModels.InventoryMainViewModel.GoToEditItemPageAsync"/>.</summary>
+        </member>
+        <member name="T:ArmoryInventoryMaui.ViewModels.ItemViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:ArmoryInventoryMaui.ViewModels.ItemViewModel.goToInventoryMainPageCommand">
+            <summary>The backing field for <see cref="P:ArmoryInventoryMaui.ViewModels.ItemViewModel.GoToInventoryMainPageCommand"/>.</summary>
+        </member>
+        <member name="P:ArmoryInventoryMaui.ViewModels.ItemViewModel.GoToInventoryMainPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ArmoryInventoryMaui.ViewModels.ItemViewModel.GoToInventoryMainPageAsync"/>.</summary>
+        </member>
+        <member name="F:ArmoryInventoryMaui.ViewModels.ItemViewModel.addContactCommand">
+            <summary>The backing field for <see cref="P:ArmoryInventoryMaui.ViewModels.ItemViewModel.AddContactCommand"/>.</summary>
+        </member>
+        <member name="P:ArmoryInventoryMaui.ViewModels.ItemViewModel.AddContactCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ArmoryInventoryMaui.ViewModels.ItemViewModel.AddContact"/>.</summary>
+        </member>
+    </members>
+</doc>

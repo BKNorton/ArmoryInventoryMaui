@@ -5,25 +5,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Type = ArmoryInventoryMaui.Models.Type;
+
 
 namespace ArmoryInventoryMaui.Repositories
 {
     public class InMemoryRepository : IRepository
     {
-        private static List<Item> items;
+        private List<Item> items;
         public InMemoryRepository()
         {
-            items = new List<Item>()
-            {
+            items =
+            [
                 new Item()
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "111N5",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Radio
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Radio", ListIndex = 1 }
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -31,10 +31,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "222NF",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -42,10 +42,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "272N8",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -53,10 +53,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "342N7",
-                    HasAllComponents = false,
-                    MissionCapable = false,
-                    CheckedOut = false,
-                    ItemType = Type.HandMic
+                    HasAllComponents = new PickerItem() { Text = "False", ListIndex = 1 },
+                    MissionCapable = new PickerItem() { Text = "False", ListIndex = 1 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "HandMic", ListIndex = 2 }
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -64,10 +64,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "233N7",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = true,
-                    ItemType = Type.Radio
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "True", ListIndex = 0 },
+                    ItemType = new PickerItem() { Text = "Radio", ListIndex = 1 }
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -75,10 +75,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "522F4",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 1 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -86,10 +86,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "442F4",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -97,10 +97,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "523F5",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.HandMic
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1},
+                    ItemType = new PickerItem() { Text = "Hand-Mic", ListIndex = 2 }
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -108,10 +108,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "372F4",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Radio
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Radio", ListIndex = 1 }
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -119,10 +119,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "522N4",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -130,10 +130,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "624N2",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -141,10 +141,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "623N5",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = true,
-                    ItemType = Type.HandMic
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "True", ListIndex = 0 },
+                    ItemType = new PickerItem() { Text = "Hand-Mic", ListIndex = 2 }
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -152,10 +152,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "124N8",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = true,
-                    ItemType = Type.HandMic
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "True", ListIndex = 0 },
+                    ItemType = new PickerItem() { Text = "Hand-Mic", ListIndex = 2 }
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -163,10 +163,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "367N2",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = true,
-                    ItemType = Type.Radio
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "True", ListIndex = 0 },
+                    ItemType = new PickerItem() { Text = "Radio", ListIndex = 1 }
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -174,10 +174,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "355N3",
-                    HasAllComponents = false,
-                    MissionCapable = false,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "False", ListIndex = 1 },
+                    MissionCapable = new PickerItem() { Text = "False", ListIndex = 1 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -185,10 +185,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "557N2",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -196,10 +196,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "363S2",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.HandMic
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "HandMic", ListIndex = 0 }
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
@@ -207,10 +207,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "867N2",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Radio
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Radio", ListIndex = 1 }
                     //Defects = {"Back connectors bent", "Front Light does'nt work" },
                     //MissingComponents = new List<string>(),
                 },
@@ -218,10 +218,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "865N3",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 2 stakes", "Missing one blue pole"},
                 },
@@ -229,10 +229,10 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "637N2",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "SKL", ListIndex = 4 }
                     //Defects = new List<string>(),
                     //MissingComponents = {"Missing 1 stake", "Missing 2 blue pole", "Missing Hammer"},
                 },
@@ -240,14 +240,14 @@ namespace ArmoryInventoryMaui.Repositories
                 {
                     Id = Guid.NewGuid(),
                     SerialNumber = "467N9",
-                    HasAllComponents = true,
-                    MissionCapable = true,
-                    CheckedOut = false,
-                    ItemType = Type.Antenna
+                    HasAllComponents = new PickerItem() { Text = "True", ListIndex = 0 },
+                    MissionCapable = new PickerItem() { Text = "True", ListIndex = 0 },
+                    CheckedOut = new PickerItem() { Text = "False", ListIndex = 1 },
+                    ItemType = new PickerItem() { Text = "Antenna", ListIndex = 0 }
                     //Defects = {"Mic key does not work"},
                     //MissingComponents = new List<string>()
                 },
-            };
+            ];
         }
 
         public Task AddItemAsync(Item item)

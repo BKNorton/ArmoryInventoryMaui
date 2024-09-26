@@ -83,7 +83,10 @@
                         </Label>
 
                         <Picker 
-                            SelectedItem="{Binding Item.ItemType}"
+                            ItemsSource="{Binding ItemType}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding ItemTypeSelectedItem}"
+                            SelectedIndex="{Binding Item.ItemType.ListIndex}"
                             Title="Select a Type"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -91,12 +94,6 @@
                             HorizontalOptions="Start"
                             BackgroundColor="White"
                             Margin="20,0,0,0">
-                            <Picker.Items>
-                                <x:String>Antenna</x:String>
-                                <x:String>Radio</x:String>
-                                <x:String>Hand Mic</x:String>
-                                <x:String>Daggr</x:String>
-                            </Picker.Items>
                         </Picker>
                         <!--<Entry
                         Grid.Column="1"
@@ -126,6 +123,10 @@
                         </Label>
 
                         <Picker 
+                            ItemsSource="{Binding HasAllComponents}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding HasComponentsSelectedItem}"
+                            SelectedIndex="{Binding Item.HasAllComponents.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -227,6 +228,10 @@
                         </Label>
 
                         <Picker 
+                            ItemsSource="{Binding MissionCapable}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding MissionCapableSelectedItem}"
+                            SelectedIndex="{Binding Item.MissionCapable.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -234,13 +239,40 @@
                             HorizontalOptions="Start"
                             BackgroundColor="White"
                             Margin="20,0,0,0">
-                            <Picker.Items>
-                                <x:String>True</x:String>
-                                <x:String>False</x:String>
-                            </Picker.Items>
                         </Picker>
                     </Grid>
                 </Frame>
+                
+                <Frame
+                    CornerRadius="0"
+                    BorderColor="Orange"
+                    BackgroundColor="LightGray"
+                    HeightRequest="100">
+                    <Grid
+                        ColumnDefinitions="170,300,*">
+                        <Label
+                            Grid.Column="0"
+                            Text="Checked Out"
+                            VerticalOptions="Center"
+                            WidthRequest="90">
+                        </Label>
+
+                        <Picker 
+                            ItemsSource="{Binding CheckedOut}"
+                            ItemDisplayBinding="{Binding Text}"
+                            SelectedItem="{Binding CheckedOutSelectedItem}"
+                            SelectedIndex="{Binding Item.CheckedOut.ListIndex}"
+                            Title="True or False"
+                            Grid.Column="1"
+                            WidthRequest="300"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            BackgroundColor="White"
+                            Margin="20,0,0,0">
+                        </Picker>
+                    </Grid>
+                </Frame>
+
             </VerticalStackLayout>
         </ScrollView>
 
