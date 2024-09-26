@@ -86,7 +86,7 @@
                             ItemsSource="{Binding ItemType}"
                             ItemDisplayBinding="{Binding Text}"
                             SelectedItem="{Binding ItemTypeSelectedItem}"
-                            SelectedIndex="{Binding Item.ItemType.ListIndex}"
+                            SelectedIndex="{Binding ItemTypeSelectedItem.ListIndex}"
                             Title="Select a Type"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -95,15 +95,6 @@
                             BackgroundColor="White"
                             Margin="20,0,0,0">
                         </Picker>
-                        <!--<Entry
-                        Grid.Column="1"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Start"
-                        Placeholder="Type"
-                        WidthRequest="300"
-                        BackgroundColor="White"
-                        Margin="20,0,0,0">
-                    </Entry>-->
                     </Grid>
                 </Frame>
 
@@ -126,7 +117,7 @@
                             ItemsSource="{Binding HasAllComponents}"
                             ItemDisplayBinding="{Binding Text}"
                             SelectedItem="{Binding HasComponentsSelectedItem}"
-                            SelectedIndex="{Binding Item.HasAllComponents.ListIndex}"
+                            SelectedIndex="{Binding HasComponentsSelectedItem.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -134,10 +125,6 @@
                             HorizontalOptions="Start"
                             BackgroundColor="White"
                             Margin="20,0,0,0">
-                            <Picker.Items>
-                                <x:String>True</x:String>
-                                <x:String>False</x:String>
-                            </Picker.Items>
                         </Picker>
                     </Grid>
                 </Frame>
@@ -157,6 +144,7 @@
                         </Label>
 
                         <Editor
+                            Text="{Binding Defects}"
                             Grid.Column="1"
                             Background="White"
                             VerticalOptions="Center"
@@ -192,6 +180,7 @@
                         </Label>
 
                         <Editor
+                            Text="{Binding MissingComponents}"
                             Grid.Column="1"
                             VerticalOptions="Center"
                             HorizontalOptions="Start"
@@ -231,7 +220,7 @@
                             ItemsSource="{Binding MissionCapable}"
                             ItemDisplayBinding="{Binding Text}"
                             SelectedItem="{Binding MissionCapableSelectedItem}"
-                            SelectedIndex="{Binding Item.MissionCapable.ListIndex}"
+                            SelectedIndex="{Binding MissionCapableSelectedItem.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -261,7 +250,7 @@
                             ItemsSource="{Binding CheckedOut}"
                             ItemDisplayBinding="{Binding Text}"
                             SelectedItem="{Binding CheckedOutSelectedItem}"
-                            SelectedIndex="{Binding Item.CheckedOut.ListIndex}"
+                            SelectedIndex="{Binding CheckedOutSelectedItem.ListIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -302,7 +291,7 @@
                 TextColor="Black"
                 BorderColor="Black"
                 BorderWidth="1"
-                Command="{Binding GoToInventoryMainPageCommand}">
+                Command="{Binding GoToMainPageCommand}">
 
             </Button>
         </HorizontalStackLayout>

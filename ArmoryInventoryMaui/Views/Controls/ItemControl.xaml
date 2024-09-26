@@ -264,7 +264,7 @@
                 TextColor="Black"
                 BorderColor="Black"
                 BorderWidth="1"
-                Command="{Binding GoToInventoryMainPageCommand}">
+                Command="{Binding GoToMainPageCommand}">
                 
             </Button>
         </HorizontalStackLayout>
