@@ -279,7 +279,8 @@
                 BackgroundColor="Orange"
                 TextColor="Black"
                 BorderColor="Black"
-                BorderWidth="1">
+                BorderWidth="1"
+                Command="{Binding UpdateContactCommand}">
 
             </Button>
 

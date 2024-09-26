@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-26T01:17:35.632</Modified>
+      <Modified>2024-09-26T03:51:19.372</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ArmoryInventoryMaui.dll">
       <PackagePath>ArmoryInventoryMaui.dll</PackagePath>
-      <Modified>2024-09-26T01:17:35.022</Modified>
+      <Modified>2024-09-26T03:51:18.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ArmoryInventoryMaui.exe</PackagePath>
-      <Modified>2024-09-26T01:17:35.027</Modified>
+      <Modified>2024-09-26T03:51:18.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kirk\source\repos\ArmoryInventoryMaui\ArmoryInventoryMaui\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

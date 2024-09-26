@@ -6,6 +6,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
 
 namespace ArmoryInventoryMaui.ViewModels
 {
@@ -30,6 +31,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref itemTypeSelectedItem, value);
+                Item.ItemType = value;
             }
         }
 
@@ -40,6 +42,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref hasComponentsSelectedItem, value);
+                Item.HasAllComponents = value;
             }
         }
 
@@ -50,6 +53,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref missionCapableSelectedItem, value);
+                Item.MissionCapable = value;
             }
         }
 
@@ -60,6 +64,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref checkedOutSelectedItem, value);
+                Item.CheckedOut = value;
             }
         }
 
@@ -70,6 +75,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref defects, value);
+                Item.Defects = value.Split(',').ToList(); ;
             }
         }
 
@@ -80,6 +86,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref missingComponents, value);
+                Item.MissingComponents = value.Split(",").ToList();
             }
         }
 
@@ -139,6 +146,13 @@ namespace ArmoryInventoryMaui.ViewModels
         public async Task AddContact()
         {
             await this.repository.AddItemAsync(this.item);
+            await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
+        }
+
+        [RelayCommand]
+        public async Task UpdateContact()
+        {
+            await this.repository.UpdateItemAsync(this.item.Id, this.item);
             await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
         }
     }
