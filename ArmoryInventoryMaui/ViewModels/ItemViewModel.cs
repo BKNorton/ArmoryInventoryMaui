@@ -112,8 +112,9 @@ namespace ArmoryInventoryMaui.ViewModels
 
         public async Task LoadItem(string itemId)
         {
+            if (string.IsNullOrWhiteSpace(itemId)) return;
             this.Item = await this.repository.GetItemByIdAsync(itemId);
-
+            if (this.Item is null || this.Item.Id == Guid.Empty) return;
             ItemTypeSelectedItem = ItemType[this.Item.ItemType.ListIndex];
 
             var defString = string.Empty;
@@ -151,6 +152,7 @@ namespace ArmoryInventoryMaui.ViewModels
         [RelayCommand]
         public async Task AddContact()
         {
+            this.Item.Id = Guid.NewGuid();
             await this.repository.AddItemAsync(this.item);
             await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
         }

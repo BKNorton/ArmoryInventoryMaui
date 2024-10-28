@@ -11,21 +11,37 @@ namespace ArmoryInventoryMaui.ViewModels
     {
         public ObservableCollection<Item> Items { get; set; }
         private Item selectedItem;
+
         public Item SelectedItem
-        { 
+        {
             get => selectedItem;
             set
             {
                 SetProperty(ref selectedItem, value);
             }
-    }
-    private IRepository repository;
+        }
+
+        public string ItemBackgroundColorNormal { get; set; }
+        public string ItemBackgroundAltColorNormal { get; set; }
+        public string ItemBackgroundColorSelected { get; set; }
+
+        public string ItemTextColorNormal { get; set; }
+        public string ItemTextColorSelected { get; set; }
+
+        private IRepository repository;
 
         public InventoryMainViewModel(IRepository repository)
         {
-            this.Items = new ObservableCollection<Item>();
+            this.Items = [];
             this.selectedItem = new Item();
             this.repository = repository;
+
+            ItemBackgroundColorNormal = "White";
+            ItemBackgroundAltColorNormal = "LightGrey";
+            ItemBackgroundColorSelected = "Blue";
+
+            ItemTextColorNormal = "Black";
+            ItemTextColorSelected = "White";
         }
 
         public async Task LoadContactsAsync()
@@ -35,9 +51,9 @@ namespace ArmoryInventoryMaui.ViewModels
             var items = await repository.GetItemsAsync();
             if (items != null && items.Count > 0)
             {
-                foreach (var item in items)
+                for (int i = 0; i<items.Count; i++)
                 {
-                    this.Items.Add(item);
+                    this.Items.Add(items[i]);
                 }
             }
         }
@@ -51,7 +67,16 @@ namespace ArmoryInventoryMaui.ViewModels
         [RelayCommand]
         public async Task GoToEditItemPageAsync()
         {
-            await Shell.Current.GoToAsync($"{nameof(EditItemPage)}?Id={selectedItem.Id.ToString()}");
+            if (this.SelectedItem.Id == Guid.Empty) return;
+            await Shell.Current.GoToAsync($"{nameof(EditItemPage)}?Id={selectedItem.Id}");
+        }
+
+        [RelayCommand]
+        public async Task DeleteItemAsync()
+        {
+            if (SelectedItem == null || this.SelectedItem.Id == Guid.Empty) return;
+            await repository.RemoveItemAsync(this.SelectedItem);
+            await LoadContactsAsync();
         }
     }  
 }

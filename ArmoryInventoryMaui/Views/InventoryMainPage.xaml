@@ -5,7 +5,9 @@
              xmlns:vm="clr-namespace:ArmoryInventoryMaui.ViewModels"
              x:DataType="vm:InventoryMainViewModel"
              x:Class="ArmoryInventoryMaui.Views.InventoryMainPage"
+             x:Name="MainPage"
              Title="Inventory">
+
     <Grid
         RowDefinitions="65,100,*,100"
         ColumnDefinitions="1800,*"
@@ -109,78 +111,79 @@
         </Grid>
 
         <CollectionView
-            x:Name="Collection"
+            x:Name="CollectionOfItems"
             ItemsSource="{Binding Items}"
+            Header="{Binding .}"
             Grid.Row="2"
             Grid.Column="0"
-            BackgroundColor="Grey"
             Margin="20,0,0,0"
-            Header="{Binding .}"
             WidthRequest="1750"
             HorizontalOptions="Start"
             VerticalOptions="Start"
             SelectionMode="Single"
-            SelectionChanged="Collection_SelectionChanged">
+            SelectedItem="{Binding SelectedItem}">
 
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="m:Item">
                     <Grid
-                        Margin="0"
-                        RowDefinitions="*"
-                        ColumnDefinitions="*,*,*,*,*">
+                            Margin="0"
+                            RowDefinitions="*"
+                            ColumnDefinitions="*,*,*,*,*">
 
                         <Frame 
-                            CornerRadius="0"
-                            BorderColor="Black"
-                            Grid.Column="0"
-                            BackgroundColor="white">
+                                x:Name="SerialNumberFrame"
+                                CornerRadius="0"
+                                BorderColor="Black"
+                                Grid.Column="0"
+                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.ItemBackgroundColorNormal}">
                             <Label 
-                                Text="{Binding SerialNumber}"
-                                HorizontalOptions="Start">
+                                    Text="{Binding SerialNumber}"
+                                    TextColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.ItemTextColorNormal}"
+                                    HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                            CornerRadius="0"
-                            BorderColor="Black"
-                            BackgroundColor="LightGrey"
-                            Grid.Column="1">
+                                CornerRadius="0"
+                                BorderColor="Black"
+                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColorNormal}"
+                                Grid.Column="1">
                             <Label 
-                                Text="{Binding ItemType.Text}"
-                                HorizontalOptions="Start">
+                                    Text="{Binding ItemType.Text}"
+                                    HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                            CornerRadius="0"
-                            BorderColor="Black"
-                            BackgroundColor="white"
-                            Grid.Column="2">
+                                CornerRadius="0"
+                                BorderColor="Black"
+                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColorNormal}"
+                                Grid.Column="2">
                             <Label 
-                                Text="{Binding HasAllComponents.Text}"
-                                HorizontalOptions="Start">
+                                    Text="{Binding HasAllComponents.Text}"
+                                    HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                            CornerRadius="0"
-                            BorderColor="Black"
-                            BackgroundColor="LightGrey"
-                            Grid.Column="3">
+                                CornerRadius="0"
+                                BorderColor="Black"
+                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColor}"
+                                Grid.Column="3">
                             <Label 
-                                Text="{Binding MissionCapable.Text}"
-                                HorizontalOptions="Start">
+                                    Text="{Binding MissionCapable.Text}"
+                                    HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                            CornerRadius="0"
-                            BorderColor="Black"
-                            BackgroundColor="white"
-                            Grid.Column="4">
+                                CornerRadius="0"
+                                BorderColor="Black"
+                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColor}"
+                                Grid.Column="4">
                             <Label 
-                                Text="{Binding CheckedOut.Text}"
-                                HorizontalOptions="Start">
+                                    Text="{Binding CheckedOut.Text}"
+                                    HorizontalOptions="Start">
                             </Label>
                         </Frame>
                     </Grid>
@@ -226,7 +229,8 @@
                 BackgroundColor="Orange"
                 TextColor="Black"
                 BorderColor="Black"
-                BorderWidth="1">
+                BorderWidth="1"
+                Command="{Binding DeleteItemCommand}">
             </Button>
         </VerticalStackLayout>
 

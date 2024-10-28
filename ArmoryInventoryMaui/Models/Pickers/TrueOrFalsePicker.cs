@@ -7,7 +7,7 @@ namespace ArmoryInventoryMaui.Models.Pickers
     {
         public ObservableCollection<PickerItem> TrueOrFalseCollection;
 
-        public TrueOrFalsePicker()
+        public TrueOrFalsePicker() 
         {
             TrueOrFalseCollection =
             [

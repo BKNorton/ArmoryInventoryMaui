@@ -1,5 +1,7 @@
 using ArmoryInventoryMaui.Models;
 using ArmoryInventoryMaui.ViewModels;
+using Microsoft.Maui.Controls.Internals;
+using System.Data;
 
 namespace ArmoryInventoryMaui.Views;
 
@@ -17,14 +19,7 @@ public partial class InventoryMainPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-
-        this.EditBttn.IsEnabled = true;
-
         await this.mainViewModel.LoadContactsAsync();
     }
 
-    private void Collection_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        mainViewModel.SelectedItem = (Item)Collection.SelectedItem;
-    }
 }
