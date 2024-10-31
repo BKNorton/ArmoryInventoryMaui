@@ -1,10 +1,9 @@
 ﻿using ArmoryInventoryMaui.Interfaces;
 using ArmoryInventoryMaui.Models;
-using ArmoryInventoryMaui.Models.Pickers;
 using ArmoryInventoryMaui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System.Collections.ObjectModel;
+using Type = ArmoryInventoryMaui.Models.Type;
 
 namespace ArmoryInventoryMaui.ViewModels
 {
@@ -22,47 +21,43 @@ namespace ArmoryInventoryMaui.ViewModels
             }
         }
 
-        private PickerItem itemTypeSelectedItem;
-        public PickerItem ItemTypeSelectedItem
+        private int itemTypeSelectedIndex;
+        public int ItemTypeSelectedIndex
         {
-            get => itemTypeSelectedItem;
+            get => itemTypeSelectedIndex;
             set
             {
-                SetProperty(ref itemTypeSelectedItem, value);
-                Item.ItemType = value;
+                SetProperty(ref itemTypeSelectedIndex, value);
             }
         }
 
-        private PickerItem hasComponentsSelectedItem;
-        public PickerItem HasComponentsSelectedItem
+        private int hasComponentsSelectedIndex;
+        public int HasComponentsSelectedIndex
         {
-            get => hasComponentsSelectedItem;
+            get => hasComponentsSelectedIndex;
             set
             {
-                SetProperty(ref hasComponentsSelectedItem, value);
-                Item.HasAllComponents = value;
+                SetProperty(ref hasComponentsSelectedIndex, value);
             }
         }
 
-        private PickerItem missionCapableSelectedItem;
-        public PickerItem MissionCapableSelectedItem
+        private int missionCapableSelectedIndex;
+        public int MissionCapableSelectedIndex
         {
-            get => missionCapableSelectedItem;
+            get => missionCapableSelectedIndex;
             set
             {
-                SetProperty(ref missionCapableSelectedItem, value);
-                Item.MissionCapable = value;
+                SetProperty(ref missionCapableSelectedIndex, value);
             }
         }
 
-        private PickerItem checkedOutSelectedItem;
-        public PickerItem CheckedOutSelectedItem
+        private int checkedOutSelectedIndex;
+        public int CheckedOutSelectedIndex
         {
-            get => checkedOutSelectedItem;
+            get => checkedOutSelectedIndex;
             set
             {
-                SetProperty(ref checkedOutSelectedItem, value);
-                Item.CheckedOut = value;
+                SetProperty(ref checkedOutSelectedIndex, value);
             }
         }
 
@@ -73,7 +68,7 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 SetProperty(ref defects, value);
-                Item.Defects = value.Split(',').ToList<string>();
+                Item.Defects = value.Split(',').ToList();
             }
         }
 
@@ -88,43 +83,43 @@ namespace ArmoryInventoryMaui.ViewModels
             }
         }
 
-        public ObservableCollection<PickerItem> HasAllComponents { get; set; }
-        public ObservableCollection<PickerItem> MissionCapable { get; set; }
-        public ObservableCollection<PickerItem> CheckedOut { get; set; }
-        public ObservableCollection<PickerItem> ItemType { get; set; }
+        public List<string> ItemTypePicker
+        {
+            get => Enum.GetNames(typeof(Type)).ToList();
+        }
+
+        public List<string> TrueOrFalsePicker
+        {
+            get => Enum.GetNames(typeof(TrueOrFalse)).ToList();
+        }
 
         public ItemViewModel(IRepository repository)
         {
-            this.item = new Item();
-            this.itemTypeSelectedItem = new PickerItem();
-            this.hasComponentsSelectedItem = new PickerItem();
-            this.missionCapableSelectedItem = new PickerItem();
-            this.checkedOutSelectedItem = new PickerItem();
-            this.defects = string.Empty;
-            this.missingComponents = string.Empty;
+            item = new Item();
+            defects = string.Empty;
+            missingComponents = string.Empty;
             this.repository = repository;
-
-            HasAllComponents = new TrueOrFalsePicker().TrueOrFalseCollection;
-            MissionCapable = new TrueOrFalsePicker().TrueOrFalseCollection;
-            CheckedOut = new TrueOrFalsePicker().TrueOrFalseCollection;
-            ItemType = new ItemTypePicker().ItemTypesCollection;
         }
 
         public async Task LoadItem(string itemId)
         {
             if (string.IsNullOrWhiteSpace(itemId)) return;
-            this.Item = await this.repository.GetItemByIdAsync(itemId);
-            if (this.Item is null || this.Item.Id == Guid.Empty) return;
-            ItemTypeSelectedItem = ItemType[this.Item.ItemType.ListIndex];
+            Item = await repository.GetItemByIdAsync(itemId);
+            if (Item is null || Item.Id == Guid.Empty) return;
+
+            ItemTypeSelectedIndex = (int)Item.ItemType;
+            HasComponentsSelectedIndex = (int)Item.HasAllComponents;
+            MissionCapableSelectedIndex = (int)Item.MissionCapable;
+            CheckedOutSelectedIndex = (int)Item.CheckedOut;
 
             var defString = string.Empty;
             if (Item.Defects != null)
             {
-                for (int i = 0; i < this.Item.Defects.Count; i++)
+                for (int i = 0; i < Item.Defects.Count; i++)
                 {
-                    defString += this.Item.Defects[i];
+                    defString += Item.Defects[i];
 
-                    if (i != this.Item.Defects.Count - 1) defString += ", ";
+                    if (i != Item.Defects.Count - 1) defString += ", ";
                 }
                 Defects = defString;
             }
@@ -134,9 +129,9 @@ namespace ArmoryInventoryMaui.ViewModels
             {
                 for (int i = 0; i < Item.MissingComponents.Count; i++)
                 {
-                    missString += this.Item.MissingComponents[i];
+                    missString += Item.MissingComponents[i];
 
-                    if (i != this.Item.MissingComponents.Count - 1) missString += ", ";
+                    if (i != Item.MissingComponents.Count - 1) missString += ", ";
                 }
                 MissingComponents = missString;
             } 
@@ -152,16 +147,43 @@ namespace ArmoryInventoryMaui.ViewModels
         [RelayCommand]
         public async Task AddContact()
         {
-            this.Item.Id = Guid.NewGuid();
-            await this.repository.AddItemAsync(this.item);
+            Item.Id = Guid.NewGuid();
+            SetItem();
+
+            await repository.AddItemAsync(item);
             await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
         }
 
         [RelayCommand]
-        public async Task UpdateContact()
+        public async Task UpdateItem()
         {
-            await this.repository.UpdateItemAsync(this.item.Id, this.item);
+            SetItem();
+
+            await repository.UpdateItemAsync(item.Id, item);
             await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
+        }
+
+        private void SetItem()
+        {
+            if (Enum.TryParse(itemTypeSelectedIndex.ToString(), out Type typeValue))
+            {
+                Item.ItemType = typeValue;
+            }
+
+            if (Enum.TryParse(hasComponentsSelectedIndex.ToString(), out TrueOrFalse hasCompValue))
+            {
+                Item.HasAllComponents = hasCompValue;
+            }
+
+            if (Enum.TryParse(missionCapableSelectedIndex.ToString(), out TrueOrFalse missCapValue))
+            {
+                Item.MissionCapable = missCapValue;
+            }
+
+            if (Enum.TryParse(checkedOutSelectedIndex.ToString(), out TrueOrFalse checkOutValue))
+            {
+                Item.CheckedOut = checkOutValue;
+            }
         }
     }
 }

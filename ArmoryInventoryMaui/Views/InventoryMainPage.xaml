@@ -149,7 +149,7 @@
                                 BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColorNormal}"
                                 Grid.Column="1">
                             <Label 
-                                    Text="{Binding ItemType.Text}"
+                                    Text="{Binding ItemType}"
                                     HorizontalOptions="Start">
                             </Label>
                         </Frame>
@@ -160,7 +160,7 @@
                                 BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColorNormal}"
                                 Grid.Column="2">
                             <Label 
-                                    Text="{Binding HasAllComponents.Text}"
+                                    Text="{Binding HasAllComponents}"
                                     HorizontalOptions="Start">
                             </Label>
                         </Frame>
@@ -171,7 +171,7 @@
                                 BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColor}"
                                 Grid.Column="3">
                             <Label 
-                                    Text="{Binding MissionCapable.Text}"
+                                    Text="{Binding MissionCapable}"
                                     HorizontalOptions="Start">
                             </Label>
                         </Frame>
@@ -182,7 +182,7 @@
                                 BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColor}"
                                 Grid.Column="4">
                             <Label 
-                                    Text="{Binding CheckedOut.Text}"
+                                    Text="{Binding CheckedOut}"
                                     HorizontalOptions="Start">
                             </Label>
                         </Frame>

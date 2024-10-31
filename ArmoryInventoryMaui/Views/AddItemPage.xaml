@@ -81,10 +81,8 @@
                         </Label>
 
                         <Picker 
-                            ItemsSource="{Binding ItemType}"
-                            ItemDisplayBinding="{Binding Text}"
-                            SelectedItem="{Binding ItemTypeSelectedItem}"
-                            SelectedIndex="{Binding Item.ItemType.ListIndex}"
+                            ItemsSource="{Binding ItemTypePicker}"
+                            SelectedIndex="{Binding ItemTypeSelectedIndex}"
                             Title="Select a Type"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -112,10 +110,8 @@
                         </Label>
 
                         <Picker 
-                            ItemsSource="{Binding HasAllComponents}"
-                            ItemDisplayBinding="{Binding Text}"
-                            SelectedItem="{Binding HasComponentsSelectedItem}"
-                            SelectedIndex="{Binding Item.HasAllComponents.ListIndex}"
+                            ItemsSource="{Binding TrueOrFalsePicker}"
+                            SelectedIndex="{Binding HasComponentsSelectedIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -215,10 +211,8 @@
                         </Label>
 
                         <Picker 
-                            ItemsSource="{Binding MissionCapable}"
-                            ItemDisplayBinding="{Binding Text}"
-                            SelectedItem="{Binding MissionCapableSelectedItem}"
-                            SelectedIndex="{Binding Item.MissionCapable.ListIndex}"
+                            ItemsSource="{Binding TrueOrFalsePicker}"
+                            SelectedIndex="{Binding MissionCapableSelectedIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
@@ -245,10 +239,8 @@
                         </Label>
 
                         <Picker 
-                            ItemsSource="{Binding CheckedOut}"
-                            ItemDisplayBinding="{Binding Text}"
-                            SelectedItem="{Binding CheckedOutSelectedItem}"
-                            SelectedIndex="{Binding Item.CheckedOut.ListIndex}"
+                            ItemsSource="{Binding TrueOrFalsePicker}"
+                            SelectedIndex="{Binding CheckedOutSelectedIndex}"
                             Title="True or False"
                             Grid.Column="1"
                             WidthRequest="300"
