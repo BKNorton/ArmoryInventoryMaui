@@ -281,6 +281,23 @@ namespace ArmoryInventoryMaui.Repositories
             return Task.FromResult(items);
         }
 
+        public Task<List<Item>> GetItemsBySearchAsync(string filterText)
+        {
+            if (string.IsNullOrWhiteSpace(filterText))
+            {
+                return Task.FromResult(this.items);
+            }
+
+            var items = this.items.Where( x => !string.IsNullOrWhiteSpace(x.SerialNumber)
+                && x.SerialNumber.StartsWith(filterText, StringComparison.OrdinalIgnoreCase))?.ToList();
+
+            if (items is null || items.Count <= 0)
+            {
+                return Task.FromResult(new List<Item>());
+            }
+            return Task.FromResult(items);
+        }
+
         public Task<Item> GetItemByIdAsync(string id)
         {
             var item = items.Where(x => x.Id.ToString() == id).FirstOrDefault();

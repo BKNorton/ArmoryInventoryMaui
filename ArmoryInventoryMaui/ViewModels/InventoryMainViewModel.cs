@@ -9,9 +9,10 @@ namespace ArmoryInventoryMaui.ViewModels
 {
     public partial class InventoryMainViewModel : ObservableObject
     {
-        public ObservableCollection<Item> Items { get; set; }
-        private Item selectedItem;
+        public ObservableCollection<Item> ItemCollection { get; set; }
+        private IRepository repository;
 
+        private Item selectedItem;
         public Item SelectedItem
         {
             get => selectedItem;
@@ -21,39 +22,49 @@ namespace ArmoryInventoryMaui.ViewModels
             }
         }
 
-        public string ItemBackgroundColorNormal { get; set; }
-        public string ItemBackgroundAltColorNormal { get; set; }
-        public string ItemBackgroundColorSelected { get; set; }
-
-        public string ItemTextColorNormal { get; set; }
-        public string ItemTextColorSelected { get; set; }
-
-        private IRepository repository;
+        private string filterText;
+        public string FilterText
+        {
+            get => filterText;
+            set
+            {
+                filterText = value;
+                LoadFilteredContactsAsync(filterText).GetAwaiter().GetResult();
+            }
+        }
 
         public InventoryMainViewModel(IRepository repository)
         {
-            this.Items = [];
-            this.selectedItem = new Item();
+            ItemCollection = [];
+            selectedItem = new Item();
+            filterText = string.Empty;
             this.repository = repository;
-
-            ItemBackgroundColorNormal = "White";
-            ItemBackgroundAltColorNormal = "LightGrey";
-            ItemBackgroundColorSelected = "Blue";
-
-            ItemTextColorNormal = "Black";
-            ItemTextColorSelected = "White";
         }
 
-        public async Task LoadContactsAsync()
+        public async Task LoadFreshContactsAsync()
         {
-            this.Items.Clear();
+            ItemCollection.Clear();
 
             var items = await repository.GetItemsAsync();
             if (items != null && items.Count > 0)
             {
                 for (int i = 0; i<items.Count; i++)
                 {
-                    this.Items.Add(items[i]);
+                    ItemCollection.Add(items[i]);
+                }
+            }
+        }
+
+        public async Task LoadFilteredContactsAsync(string filterText)
+        {
+            ItemCollection.Clear();
+
+            var items = await repository.GetItemsBySearchAsync(filterText);
+            if (items != null && items.Count > 0)
+            {
+                for (int i = 0; i < items.Count; i++)
+                {
+                    ItemCollection.Add(items[i]);
                 }
             }
         }
@@ -67,16 +78,20 @@ namespace ArmoryInventoryMaui.ViewModels
         [RelayCommand]
         public async Task GoToEditItemPageAsync()
         {
-            if (this.SelectedItem.Id == Guid.Empty) return;
+            if (selectedItem is null) return;
+            if (selectedItem.Id == Guid.Empty) return;
             await Shell.Current.GoToAsync($"{nameof(EditItemPage)}?Id={selectedItem.Id}");
         }
 
         [RelayCommand]
         public async Task DeleteItemAsync()
         {
-            if (SelectedItem == null || this.SelectedItem.Id == Guid.Empty) return;
-            await repository.RemoveItemAsync(this.SelectedItem);
-            await LoadContactsAsync();
+            if (selectedItem is null) return;
+            if (selectedItem.Id != Guid.Empty)
+            {
+                await repository.RemoveItemAsync(selectedItem);
+                await LoadFreshContactsAsync();
+            }
         }
     }  
 }

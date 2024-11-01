@@ -19,7 +19,7 @@ public partial class InventoryMainPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        await this.mainViewModel.LoadContactsAsync();
+        await this.mainViewModel.LoadFreshContactsAsync();
     }
 
 }

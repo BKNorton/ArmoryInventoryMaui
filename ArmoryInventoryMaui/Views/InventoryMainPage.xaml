@@ -22,7 +22,7 @@
         </Image>
 
         <SearchBar
-            x:Name="SearchBar"
+            Text="{Binding FilterText}"
             Grid.Row="0"
             Grid.Column="0"
             HorizontalOptions="Start"
@@ -112,7 +112,7 @@
 
         <CollectionView
             x:Name="CollectionOfItems"
-            ItemsSource="{Binding Items}"
+            ItemsSource="{Binding ItemCollection}"
             Header="{Binding .}"
             Grid.Row="2"
             Grid.Column="0"
@@ -126,64 +126,74 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="m:Item">
                     <Grid
-                            Margin="0"
-                            RowDefinitions="*"
-                            ColumnDefinitions="*,*,*,*,*">
+                        Margin="0"
+                        RowDefinitions="*"
+                        ColumnDefinitions="*,*,*,*,*"
+                        BackgroundColor="White">
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Normal" />
+                                <VisualState Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="LightGrey" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
 
                         <Frame 
-                                x:Name="SerialNumberFrame"
-                                CornerRadius="0"
-                                BorderColor="Black"
-                                Grid.Column="0"
-                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.ItemBackgroundColorNormal}">
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="Transparent"
+                            Grid.Column="0">
                             <Label 
-                                    Text="{Binding SerialNumber}"
-                                    TextColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.ItemTextColorNormal}"
-                                    HorizontalOptions="Start">
+                                Text="{Binding SerialNumber}"
+                                HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                                CornerRadius="0"
-                                BorderColor="Black"
-                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColorNormal}"
-                                Grid.Column="1">
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="Transparent"
+                            Grid.Column="1">
                             <Label 
-                                    Text="{Binding ItemType}"
-                                    HorizontalOptions="Start">
+                                Text="{Binding ItemType}"
+                                HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                                CornerRadius="0"
-                                BorderColor="Black"
-                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColorNormal}"
-                                Grid.Column="2">
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="Transparent"
+                            Grid.Column="2">
                             <Label 
-                                    Text="{Binding HasAllComponents}"
-                                    HorizontalOptions="Start">
+                                Text="{Binding HasAllComponents}"
+                                HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                                CornerRadius="0"
-                                BorderColor="Black"
-                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColor}"
-                                Grid.Column="3">
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="Transparent"
+                            Grid.Column="3">
                             <Label 
-                                    Text="{Binding MissionCapable}"
-                                    HorizontalOptions="Start">
+                                Text="{Binding MissionCapable}"
+                                HorizontalOptions="Start">
                             </Label>
                         </Frame>
 
                         <Frame 
-                                CornerRadius="0"
-                                BorderColor="Black"
-                                BackgroundColor="{Binding Source={x:Reference MainPage}, Path=BindingContext.Item.ItemBackgroundColor}"
-                                Grid.Column="4">
+                            CornerRadius="0"
+                            BorderColor="Black"
+                            BackgroundColor="Transparent"
+                            Grid.Column="4">
                             <Label 
-                                    Text="{Binding CheckedOut}"
-                                    HorizontalOptions="Start">
+                                Text="{Binding CheckedOut}"
+                                HorizontalOptions="Start">
                             </Label>
                         </Frame>
                     </Grid>
