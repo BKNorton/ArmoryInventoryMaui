@@ -1,4 +1,5 @@
 ﻿using ArmoryInventoryMaui.Models;
+using Type = ArmoryInventoryMaui.Models.Type;
 
 namespace ArmoryInventoryMaui.Interfaces
 {
@@ -9,6 +10,7 @@ namespace ArmoryInventoryMaui.Interfaces
         public Task<List<Item>> GetItemsAsync();
         public Task<Item> GetItemByIdAsync(string id);
         public Task<List<Item>> GetItemsBySearchAsync(string filterText);
+        public Task<List<Item>> GetItemsByFiltersAsync(int typeIndex, int hasCompIndex, int missCapIndex, int checkOutIndex);
         public Task UpdateItemAsync(Guid Id, Item item);
     }
 }

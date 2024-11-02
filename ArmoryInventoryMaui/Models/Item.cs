@@ -15,6 +15,7 @@
 
     public enum Type 
     {
+        None,
         Antenna,
         Radio,
         HandMic,
@@ -24,6 +25,7 @@
 
     public enum TrueOrFalse
     {
+        None,
         True,
         False
     }

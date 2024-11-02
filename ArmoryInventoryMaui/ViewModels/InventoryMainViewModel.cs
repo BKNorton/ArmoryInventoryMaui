@@ -4,6 +4,7 @@ using ArmoryInventoryMaui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
+using Type = ArmoryInventoryMaui.Models.Type;
 
 namespace ArmoryInventoryMaui.ViewModels
 {
@@ -11,6 +12,16 @@ namespace ArmoryInventoryMaui.ViewModels
     {
         public ObservableCollection<Item> ItemCollection { get; set; }
         private IRepository repository;
+
+        public List<string> ItemTypePicker
+        {
+            get => Enum.GetNames(typeof(Type)).ToList();
+        }
+
+        public List<string> TrueOrFalsePicker
+        {
+            get => Enum.GetNames(typeof(TrueOrFalse)).ToList();
+        }
 
         private Item selectedItem;
         public Item SelectedItem
@@ -29,9 +40,56 @@ namespace ArmoryInventoryMaui.ViewModels
             set
             {
                 filterText = value;
-                LoadFilteredContactsAsync(filterText).GetAwaiter().GetResult();
+                LoadSearchItemsAsync(filterText).GetAwaiter().GetResult();
             }
         }
+
+        private int itemTypeFilterIndex;
+        public int ItemTypeFilterIndex
+        {
+            get => itemTypeFilterIndex;
+            set
+            {
+                itemTypeFilterIndex = value;
+                LoadFilteredItemsAsync().GetAwaiter().GetResult();
+            }
+        }
+
+        private int hasCompFilterIndex;
+        public int HasCompFilterIndex
+
+        {
+            get => hasCompFilterIndex;
+            set
+            {
+                hasCompFilterIndex = value;
+                LoadFilteredItemsAsync().GetAwaiter().GetResult();
+            }
+        }
+
+        private int missCapFilterIndex;
+        public int MissCapFilterIndex
+
+        {
+            get => missCapFilterIndex;
+            set
+            {
+                missCapFilterIndex = value;
+                LoadFilteredItemsAsync().GetAwaiter().GetResult();
+            }
+        }
+        private int checkOutFilterIndex;
+        public int CheckOutFilterIndex
+
+        {
+            get => checkOutFilterIndex;
+            set
+            {
+                checkOutFilterIndex = value;
+                LoadFilteredItemsAsync().GetAwaiter().GetResult();
+            }
+        }
+
 
         public InventoryMainViewModel(IRepository repository)
         {
@@ -41,7 +99,7 @@ namespace ArmoryInventoryMaui.ViewModels
             this.repository = repository;
         }
 
-        public async Task LoadFreshContactsAsync()
+        public async Task LoadFreshItemsAsync()
         {
             ItemCollection.Clear();
 
@@ -55,11 +113,25 @@ namespace ArmoryInventoryMaui.ViewModels
             }
         }
 
-        public async Task LoadFilteredContactsAsync(string filterText)
+        public async Task LoadSearchItemsAsync(string filterText)
         {
             ItemCollection.Clear();
 
             var items = await repository.GetItemsBySearchAsync(filterText);
+            if (items != null && items.Count > 0)
+            {
+                for (int i = 0; i < items.Count; i++)
+                {
+                    ItemCollection.Add(items[i]);
+                }
+            }
+        }
+
+        public async Task LoadFilteredItemsAsync()
+        {
+            ItemCollection.Clear();
+            var items = await repository.GetItemsByFiltersAsync(itemTypeFilterIndex, hasCompFilterIndex, missCapFilterIndex, checkOutFilterIndex);
+
             if (items != null && items.Count > 0)
             {
                 for (int i = 0; i < items.Count; i++)
@@ -90,7 +162,7 @@ namespace ArmoryInventoryMaui.ViewModels
             if (selectedItem.Id != Guid.Empty)
             {
                 await repository.RemoveItemAsync(selectedItem);
-                await LoadFreshContactsAsync();
+                await LoadFreshItemsAsync();
             }
         }
     }  

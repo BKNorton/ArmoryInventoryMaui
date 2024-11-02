@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArmoryInventoryMaui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+837572981830c84da6c6078185db1c62323b47d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f1771dd3d618bdd32330601452d1f0dab415de01")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArmoryInventoryMaui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArmoryInventoryMaui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

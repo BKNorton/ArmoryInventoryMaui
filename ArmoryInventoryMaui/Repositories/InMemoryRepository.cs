@@ -1,5 +1,6 @@
 ﻿using ArmoryInventoryMaui.Interfaces;
 using ArmoryInventoryMaui.Models;
+using Type = ArmoryInventoryMaui.Models.Type;
 namespace ArmoryInventoryMaui.Repositories
 {
     public class InMemoryRepository : IRepository
@@ -295,7 +296,39 @@ namespace ArmoryInventoryMaui.Repositories
             {
                 return Task.FromResult(new List<Item>());
             }
+
             return Task.FromResult(items);
+        }
+
+        public Task<List<Item>> GetItemsByFiltersAsync(int type, int hasComp, int missCap, int checkOut)
+        {
+            if (type != 0)
+            {
+                var items = this.items.Where(x => (int)x.ItemType == type).ToList();
+                if(hasComp != 0) items = items.Where(x => (int)x.HasAllComponents == hasComp).ToList();
+                if (missCap != 0) items = items.Where(x => (int)x.MissionCapable == missCap).ToList();
+                if (checkOut != 0) items = items.Where(x => (int)x.CheckedOut == checkOut).ToList();
+                return Task.FromResult(items);
+            }
+            else if (hasComp != 0)
+            {
+                var items = this.items.Where(x => (int)x.HasAllComponents == hasComp).ToList();
+                if (missCap != 0) items = items.Where(x => (int)x.MissionCapable == missCap).ToList();
+                if (checkOut != 0) items = items.Where(x => (int)x.CheckedOut == checkOut).ToList();
+                return Task.FromResult(items);
+            }
+            else if (missCap != 0)
+            {
+                var items = this.items.Where(x => (int)x.MissionCapable == missCap).ToList();
+                if (checkOut != 0) items = items.Where(x => (int)x.CheckedOut == checkOut).ToList();
+                return Task.FromResult(items);
+            }
+            else if (checkOut != 0)
+            {
+                var items = this.items.Where(x => (int)x.CheckedOut == checkOut).ToList();
+                return Task.FromResult(items);
+            }
+            else return Task.FromResult(this.items); 
         }
 
         public Task<Item> GetItemByIdAsync(string id)
