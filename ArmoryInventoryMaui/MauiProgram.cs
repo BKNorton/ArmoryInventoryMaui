@@ -19,14 +19,20 @@ namespace ArmoryInventoryMaui
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+
+            //Dependency Injections//
+            
+            //Repository
             builder.Services.AddSingleton<IRepository, InMemoryRepository>();
 
+            //Pages
             builder.Services.AddTransient<InventoryMainPage>();
             builder.Services.AddTransient<MissionsPage>();
             builder.Services.AddTransient<RetransPage>();
             builder.Services.AddTransient<AddItemPage>();
             builder.Services.AddTransient<EditItemPage>();
 
+            //View Models
             builder.Services.AddTransient<InventoryMainViewModel>();
             builder.Services.AddTransient<ItemViewModel>();
 

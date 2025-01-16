@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\inventorymainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\inventorymainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\inventorymainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\inventorymainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\viewmodels\\inventorymainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\viewmodels\\inventorymainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\repositories\\inmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\repositories\\inmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\viewmodels\\inventorymainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\viewmodels\\inventorymainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\additempage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\additempage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\edititempage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\edititempage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\edititempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\edititempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\inventorymainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\inventorymainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\inventorymainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\inventorymainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\models\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,24 +59,12 @@
       "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\models\\enums\\trueorfalse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\edititempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\edititempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\additempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\views\\additempage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|solutionrelative:armoryinventorymaui\\viewmodels\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AB52A98-B695-4C92-8817-2E48EA0CADC3}|ArmoryInventoryMaui\\ArmoryInventoryMaui.csproj|c:\\users\\kirk\\source\\repos\\armoryinventorymaui\\armoryinventorymaui\\views\\controls\\itemcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -62,19 +78,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TrueOrFalse.cs",
-              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
-              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
-              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
-              "RelativeToolTip": "ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
+              "DocumentIndex": 4,
+              "Title": "AddItemPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\AddItemPage.xaml.cs",
+              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Views\\AddItemPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\AddItemPage.xaml.cs",
+              "RelativeToolTip": "ArmoryInventoryMaui\\Views\\AddItemPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T17:02:52.049Z",
+              "WhenOpened": "2025-01-16T17:42:03.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditItemPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\EditItemPage.xaml.cs",
+              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Views\\EditItemPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\EditItemPage.xaml.cs",
+              "RelativeToolTip": "ArmoryInventoryMaui\\Views\\EditItemPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T17:36:52.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\AppShell.xaml.cs",
+              "RelativeToolTip": "ArmoryInventoryMaui\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T17:33:36.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\MauiProgram.cs",
+              "RelativeToolTip": "ArmoryInventoryMaui\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:07:46.905Z",
               "EditorCaption": ""
             },
             {
@@ -95,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Checkout.cs",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Checkout.cs",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Models\\Checkout.cs",
@@ -103,24 +158,24 @@
               "RelativeToolTip": "ArmoryInventoryMaui\\Models\\Checkout.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T13:46:24.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T13:46:24.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "EditItemPage.xaml",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\EditItemPage.xaml",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Views\\EditItemPage.xaml",
               "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\EditItemPage.xaml",
               "RelativeToolTip": "ArmoryInventoryMaui\\Views\\EditItemPage.xaml",
-              "ViewState": "AgIAAPwAAAAAAAAAAIBJwAsBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-08T19:03:03.748Z"
+              "WhenOpened": "2024-11-08T19:03:03.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Styles.xaml",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Resources\\Styles\\Styles.xaml",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Resources\\Styles\\Styles.xaml",
@@ -128,24 +183,25 @@
               "RelativeToolTip": "ArmoryInventoryMaui\\Resources\\Styles\\Styles.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T06:22:39.525Z"
+              "WhenOpened": "2024-11-03T06:22:39.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "InventoryMainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\InventoryMainPage.xaml.cs",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Views\\InventoryMainPage.xaml.cs",
               "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\InventoryMainPage.xaml.cs",
               "RelativeToolTip": "ArmoryInventoryMaui\\Views\\InventoryMainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T19:06:06.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "InventoryMainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\InventoryMainPage.xaml",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Views\\InventoryMainPage.xaml",
@@ -164,40 +220,40 @@
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\ViewModels\\InventoryMainViewModel.cs",
               "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\ViewModels\\InventoryMainViewModel.cs",
               "RelativeToolTip": "ArmoryInventoryMaui\\ViewModels\\InventoryMainViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T16:55:02.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "InMemoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Repositories\\InMemoryRepository.cs",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Repositories\\InMemoryRepository.cs",
               "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Repositories\\InMemoryRepository.cs",
               "RelativeToolTip": "ArmoryInventoryMaui\\Repositories\\InMemoryRepository.cs",
-              "ViewState": "AgIAAFIBAAAAAAAAAAAuwAMBAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQBAACNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T16:42:03.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Item.cs",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Models\\Item.cs",
-              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Item.cs",
-              "RelativeToolTip": "ArmoryInventoryMaui\\Models\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Item.cs*",
+              "RelativeToolTip": "ArmoryInventoryMaui\\Models\\Item.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T22:00:28.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ItemControl.xaml",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\Controls\\ItemControl.xaml",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Views\\Controls\\ItemControl.xaml",
@@ -205,11 +261,37 @@
               "RelativeToolTip": "ArmoryInventoryMaui\\Views\\Controls\\ItemControl.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-28T18:50:53.591Z"
+              "WhenOpened": "2024-10-28T18:50:53.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
+              "Title": "ItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
+              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
+              "RelativeToolTip": "ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAADwv5MAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:43:34.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TrueOrFalse.cs",
+              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
+              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
+              "RelativeToolTip": "ArmoryInventoryMaui\\Models\\Enums\\TrueOrFalse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:02:52.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "AddItemPage.xaml",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Views\\AddItemPage.xaml",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Views\\AddItemPage.xaml",
@@ -217,11 +299,12 @@
               "RelativeToolTip": "ArmoryInventoryMaui\\Views\\AddItemPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-31T03:00:07.873Z"
+              "WhenOpened": "2024-10-31T03:00:07.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Interfaces\\IRepository.cs",
@@ -230,19 +313,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T17:02:26.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ItemViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
-              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
-              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
-              "RelativeToolTip": "ArmoryInventoryMaui\\ViewModels\\ItemViewModel.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAmwBcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T16:43:34.835Z",
               "EditorCaption": ""
             }
           ]

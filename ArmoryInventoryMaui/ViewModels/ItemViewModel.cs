@@ -102,12 +102,19 @@ namespace ArmoryInventoryMaui.ViewModels
             this.repository = repository;
         }
 
+        /// <summary>
+        /// itemId sent from the view to this viewModel uses the injected repository to grab the item and load it into the view model.
+        /// </summary>
+        /// <param name="itemId"></param>
+        /// <returns></returns>
         public async Task LoadItem(string itemId)
         {
+            //Verification
             if (string.IsNullOrWhiteSpace(itemId)) return;
             Item = await repository.GetItemByIdAsync(itemId);
             if (Item is null || Item.Id == Guid.Empty) return;
 
+            //Load properties
             ItemTypeSelectedIndex = (int)Item.ItemType;
             HasComponentsSelectedIndex = (int)Item.HasAllComponents;
             MissionCapableSelectedIndex = (int)Item.MissionCapable;
@@ -138,33 +145,8 @@ namespace ArmoryInventoryMaui.ViewModels
             } 
         }
 
-
-        [RelayCommand]
-        public async Task GoToMainPageAsync()
-        {
-            await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
-        }
-
-        [RelayCommand]
-        public async Task AddContact()
-        {
-            Item.Id = Guid.NewGuid();
-            SetItem();
-
-            await repository.AddItemAsync(item);
-            await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
-        }
-
-        [RelayCommand]
-        public async Task UpdateItem()
-        {
-            SetItem();
-
-            await repository.UpdateItemAsync(item.Id, item);
-            await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
-        }
-
-        private void SetItem()
+        //ItemViewModel properties reflecting Picker properties used in Views to set ItemViewModel Item enum properties.
+        private void SetItemPropsWithPickers()
         {
             if (Enum.TryParse(itemTypeSelectedIndex.ToString(), out Type typeValue))
             {
@@ -185,6 +167,31 @@ namespace ArmoryInventoryMaui.ViewModels
             {
                 Item.CheckedOut = checkOutValue;
             }
+        }
+
+        [RelayCommand]
+        public async Task GoToMainPageAsync()
+        {
+            await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
+        }
+
+        [RelayCommand]
+        public async Task AddContact()
+        {
+            Item.Id = Guid.NewGuid();
+            SetItemPropsWithPickers();
+
+            await repository.AddItemAsync(item);
+            await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
+        }
+
+        [RelayCommand]
+        public async Task UpdateItem()
+        {
+            SetItemPropsWithPickers();
+
+            await repository.UpdateItemAsync(item.Id, item);
+            await Shell.Current.GoToAsync($"/{nameof(InventoryMainPage)}");
         }
     }
 }

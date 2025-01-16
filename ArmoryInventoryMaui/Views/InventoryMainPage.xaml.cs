@@ -21,7 +21,10 @@ public partial class InventoryMainPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        await this.mainViewModel.LoadFreshItemsAsync();
+
+        // Refresh the Inventory everytime you navigate back to mainpage so
+        // that any changes that have been made are reflected
+        await this.mainViewModel.ReFreshItemsAsync();
     }
 
 }

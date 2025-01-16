@@ -7,6 +7,8 @@ public partial class EditItemPage : ContentPage
 {
     private readonly ItemViewModel itemViewModel;
 
+
+    //Loading selected Item from IventoryMainPage
     public string ItemId
     {
         set

@@ -8,6 +8,7 @@ namespace ArmoryInventoryMaui
         {
             InitializeComponent();
 
+            //Routing
             Routing.RegisterRoute(nameof(InventoryMainPage), typeof(InventoryMainPage));
             Routing.RegisterRoute(nameof(MissionsPage), typeof(MissionsPage));
             Routing.RegisterRoute(nameof(RetransPage), typeof(RetransPage));

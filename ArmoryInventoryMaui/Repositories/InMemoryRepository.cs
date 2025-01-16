@@ -9,6 +9,7 @@ namespace ArmoryInventoryMaui.Repositories
         private List<Item> items;
         public InMemoryRepository()
         {
+            //Seed data
             items =
             [
                 new Item()
@@ -283,6 +284,8 @@ namespace ArmoryInventoryMaui.Repositories
             return Task.FromResult(items);
         }
 
+
+        //Searches for items by Serial Number with user input
         public Task<List<Item>> GetItemsBySearchAsync(string filterText)
         {
             if (string.IsNullOrWhiteSpace(filterText))
@@ -301,6 +304,9 @@ namespace ArmoryInventoryMaui.Repositories
             return Task.FromResult(items);
         }
 
+
+        //Searches for items using filter selections by user
+        //Search has a top-down aproach, will search checking every filter selection and will be called every time a filter selection is made
         public Task<List<Item>> GetItemsByFiltersAsync(int type, int hasComp, int missCap, int checkOut)
         {
             if (type != 0)

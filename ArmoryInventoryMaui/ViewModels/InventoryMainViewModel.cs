@@ -14,16 +14,6 @@ namespace ArmoryInventoryMaui.ViewModels
         public ObservableCollection<Item> ItemCollection { get; set; }
         private IRepository repository;
 
-        public List<string> ItemTypePicker
-        {
-            get => Enum.GetNames(typeof(Type)).ToList();
-        }
-
-        public List<string> TrueOrFalsePicker
-        {
-            get => Enum.GetNames(typeof(TrueOrFalse)).ToList();
-        }
-
         private Item selectedItem;
         public Item SelectedItem
         {
@@ -34,6 +24,18 @@ namespace ArmoryInventoryMaui.ViewModels
             }
         }
 
+        //Enums used for filter pickers
+        public List<string> ItemTypePicker
+        {
+            get => Enum.GetNames(typeof(Type)).ToList();
+        }
+
+        public List<string> TrueOrFalsePicker
+        {
+            get => Enum.GetNames(typeof(TrueOrFalse)).ToList();
+        }
+
+        //User input to search for Item based on serial number
         private string filterText;
         public string FilterText
         {
@@ -45,6 +47,8 @@ namespace ArmoryInventoryMaui.ViewModels
             }
         }
 
+        //User selections to filter Inventory
+        //Whenever a filter selection is made call LoadFilterdItemsAsync to refresh the view with the filterd data
         private int itemTypeFilterIndex;
         public int ItemTypeFilterIndex
         {
@@ -100,7 +104,12 @@ namespace ArmoryInventoryMaui.ViewModels
             this.repository = repository;
         }
 
-        public async Task LoadFreshItemsAsync()
+
+        /// <summary>
+        /// Clears Item collection and uses repository to refill collection 
+        /// </summary>
+        /// <returns></returns>
+        public async Task ReFreshItemsAsync()
         {
             ItemCollection.Clear();
 
@@ -113,7 +122,13 @@ namespace ArmoryInventoryMaui.ViewModels
                 }
             }
         }
+        
 
+        /// <summary>
+        /// User input in searchbar used to search database by serial number
+        /// </summary>
+        /// <param name="filterText"></param>
+        /// <returns></returns>
         public async Task LoadSearchItemsAsync(string filterText)
         {
             ItemCollection.Clear();
@@ -128,7 +143,8 @@ namespace ArmoryInventoryMaui.ViewModels
             }
         }
 
-        public async Task LoadFilteredItemsAsync()
+        // Helper method. Clears Item Collection and reload it based off of filter selections. This will be called every time a filter selection is made in the view.
+        private async Task LoadFilteredItemsAsync()
         {
             ItemCollection.Clear();
             var items = await repository.GetItemsByFiltersAsync(itemTypeFilterIndex, hasCompFilterIndex, missCapFilterIndex, checkOutFilterIndex);
@@ -163,7 +179,7 @@ namespace ArmoryInventoryMaui.ViewModels
             if (selectedItem.Id != Guid.Empty)
             {
                 await repository.RemoveItemAsync(selectedItem);
-                await LoadFreshItemsAsync();
+                await ReFreshItemsAsync();
             }
         }
     }  
