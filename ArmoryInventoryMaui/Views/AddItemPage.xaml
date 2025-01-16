@@ -17,17 +17,19 @@
         </Image>
 
         <ScrollView
-            HorizontalOptions="Center"
-            WidthRequest="800"
             Grid.Row="0"
             Grid.Column="0"
+            Orientation="Horizontal"
+            HorizontalOptions="Center"
+            MinimumWidthRequest="800"
             Margin="0,50,0,0">
 
-            <VerticalStackLayout
-                HorizontalOptions="Center"
-                WidthRequest="800">
+            <Grid
+                RowDefinitions="*,*,*,*,*,*,*,*"
+                HorizontalOptions="Center">
 
                 <Frame
+                    Grid.Row="0"
                     BackgroundColor="Black"
                     CornerRadius="0"
                     BorderColor="Orange">
@@ -40,6 +42,7 @@
                 </Frame>
 
                 <Frame
+                    Grid.Row="1"
                     CornerRadius="0"
                     BorderColor="Orange"
                     BackgroundColor="LightGray"
@@ -67,6 +70,7 @@
                 </Frame>
 
                 <Frame
+                    Grid.Row="2"
                     CornerRadius="0"
                     BorderColor="Orange"
                     BackgroundColor="LightGray"
@@ -95,6 +99,7 @@
                 </Frame>
 
                 <Frame
+                    Grid.Row="3"
                     CornerRadius="0"
                     BorderColor="Orange"
                     BackgroundColor="LightGray"
@@ -124,6 +129,7 @@
                 </Frame>
 
                 <Frame
+                    Grid.Row="4"
                     BorderColor="Orange"
                     BackgroundColor="LightGray"
                     CornerRadius="0">
@@ -153,6 +159,7 @@
                             Grid.Column="2"
                             Text="List all Defects. Seperate Defects with a comma (,)"
                             WidthRequest="200"
+                            Margin="50,0,0,0"
                             VerticalOptions="Center"
                             TextColor="Blue">
 
@@ -161,6 +168,7 @@
                 </Frame>
 
                 <Frame
+                    Grid.Row="5"
                     CornerRadius="0"
                     BorderColor="Orange"
                     BackgroundColor="LightGray">
@@ -188,6 +196,7 @@
                         <Label
                             Grid.Column="2"
                             Text="List all Missing Components. Seperate Missing Components with a comma (,)"
+                            Margin="50,0,0,0"
                             WidthRequest="200"
                             VerticalOptions="Center"
                             TextColor="Blue">
@@ -197,6 +206,7 @@
                 </Frame>
 
                 <Frame
+                    Grid.Row="6"
                     CornerRadius="0"
                     BorderColor="Orange"
                     BackgroundColor="LightGray"
@@ -225,6 +235,7 @@
                 </Frame>
 
                 <Frame
+                    Grid.Row="7"
                     CornerRadius="0"
                     BorderColor="Orange"
                     BackgroundColor="LightGray"
@@ -251,7 +262,7 @@
                         </Picker>
                     </Grid>
                 </Frame>
-            </VerticalStackLayout>
+            </Grid>
         </ScrollView>
 
         <HorizontalStackLayout

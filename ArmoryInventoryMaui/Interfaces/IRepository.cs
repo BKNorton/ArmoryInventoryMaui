@@ -1,5 +1,5 @@
 ﻿using ArmoryInventoryMaui.Models;
-using Type = ArmoryInventoryMaui.Models.Type;
+using Type = ArmoryInventoryMaui.Models.Enums.Type;
 
 namespace ArmoryInventoryMaui.Interfaces
 {

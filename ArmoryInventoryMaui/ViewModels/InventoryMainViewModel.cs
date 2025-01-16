@@ -1,10 +1,11 @@
 ﻿using ArmoryInventoryMaui.Interfaces;
 using ArmoryInventoryMaui.Models;
+using ArmoryInventoryMaui.Models.Enums;
 using ArmoryInventoryMaui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
-using Type = ArmoryInventoryMaui.Models.Type;
+using Type = ArmoryInventoryMaui.Models.Enums.Type;
 
 namespace ArmoryInventoryMaui.ViewModels
 {

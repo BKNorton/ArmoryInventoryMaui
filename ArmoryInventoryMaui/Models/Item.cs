@@ -1,4 +1,6 @@
-﻿namespace ArmoryInventoryMaui.Models
+﻿using ArmoryInventoryMaui.Models.Enums;
+
+namespace ArmoryInventoryMaui.Models
 {
     public class Item
     {
@@ -11,22 +13,5 @@
         public List<string>? Defects { get; set; }
         public List<string>? MissingComponents { get; set; }
         public string? ItemBackgroundColor { get; set; }
-    }
-
-    public enum Type 
-    {
-        None,
-        Antenna,
-        Radio,
-        HandMic,
-        DAGGR,
-        SKL
-    }
-
-    public enum TrueOrFalse
-    {
-        None,
-        True,
-        False
     }
 }

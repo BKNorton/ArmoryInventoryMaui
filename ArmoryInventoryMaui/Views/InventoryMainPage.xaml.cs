@@ -9,6 +9,8 @@ public partial class InventoryMainPage : ContentPage
 {
     private readonly InventoryMainViewModel mainViewModel;
 
+
+
     public InventoryMainPage(InventoryMainViewModel mainViewModel)
     {
         InitializeComponent();
