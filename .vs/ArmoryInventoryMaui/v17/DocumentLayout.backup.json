@@ -78,8 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -131,22 +147,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T16:07:46.905Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:11:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:13:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -227,6 +227,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Item.cs",
+              "RelativeToolTip": "ArmoryInventoryMaui\\Models\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T22:00:28.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "InMemoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Repositories\\InMemoryRepository.cs",
@@ -236,19 +249,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQBAACNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T16:42:03.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "ArmoryInventoryMaui\\Models\\Item.cs",
-              "ToolTip": "C:\\Users\\Kirk\\source\\repos\\ArmoryInventoryMaui\\ArmoryInventoryMaui\\Models\\Item.cs*",
-              "RelativeToolTip": "ArmoryInventoryMaui\\Models\\Item.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:00:28.53Z",
               "EditorCaption": ""
             },
             {
